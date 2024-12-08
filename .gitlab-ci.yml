@@ -18,7 +18,7 @@ build-docs:
       - documentation/
     expire_in: 1 week
 
-deploy-docs:
+pages :
   stage: deploy
   script:
     - mv documentation/ $PUBLIC_DIR
