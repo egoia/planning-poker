@@ -1,0 +1,30 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  # Indique où GitLab Pages va chercher les fichiers générés
+  PUBLIC_DIR: public
+
+build-docs:
+  stage: build
+  image: ubuntu:latest
+  script:
+    - apt-get update
+    - apt-get install -y doxygen graphviz
+    - doxygen conf/Doxyfile
+  artifacts:
+    paths:
+      - documentation/
+    expire_in: 1 week
+
+deploy-docs:
+  stage: deploy
+  script:
+    - mv documentation/ $PUBLIC_DIR
+  artifacts:
+    paths:
+      - $PUBLIC_DIR
+    expire_in: 1 week
+  only:
+    - ToUnity
