@@ -21,7 +21,7 @@ build-docs:
 pages :
   stage: deploy
   script:
-    - mv documentation/ $PUBLIC_DIR
+    - mv documentation/html/ $PUBLIC_DIR
   artifacts:
     paths:
       - $PUBLIC_DIR
