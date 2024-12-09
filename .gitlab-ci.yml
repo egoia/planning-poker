@@ -31,7 +31,7 @@ pages :
     - ToUnity
 
 test_project:
-  image : unityci/editor:ubuntu-latest
+  image : unityci/editor:ubuntu-6000.0.30f1-android-3.1.0
   stage: test
   script:
     - unity-editor \
