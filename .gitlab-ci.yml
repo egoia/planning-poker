@@ -31,7 +31,7 @@ pages :
     - ToUnity
 
 test_project:
-  image : unityci/editor:ubuntu-latest
+  image : ubuntu-latest
   stage: test
   script:
     - unity-editor \
