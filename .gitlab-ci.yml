@@ -31,7 +31,7 @@ pages :
     - ToUnity
 
 test_project:
-  image: unityci/editor:ubuntu-2022.3.8f1-base-0.16.1
+  image : unityci/editor:ubuntu-latest
   stage: test
   script:
     - unity-editor \
