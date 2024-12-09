@@ -1,4 +1,5 @@
 stages:
+  - test
   - build
   - deploy
 
@@ -27,4 +28,24 @@ pages :
       - $PUBLIC_DIR
     expire_in: 1 week
   only:
+    - ToUnity
+
+test_project:
+  stage: test
+  script:
+    - unity-editor \
+      -batchmode \
+      -nographics \
+      -silent-crashes \
+      -logfile /dev/stdout \
+      -runTests \
+      -testPlatform editmode \
+      -projectPath . \
+      -testResults ./test-results.xml
+  artifacts:
+    when: always
+    paths:
+      - test-results.xml
+    expire_in: 1 week
+  only : 
     - ToUnity
