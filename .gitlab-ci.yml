@@ -1,4 +1,5 @@
 stages:
+  - test
   - build
   - deploy
 
@@ -18,13 +19,34 @@ build-docs:
       - documentation/
     expire_in: 1 week
 
-deploy-docs:
+pages :
   stage: deploy
   script:
-    - mv documentation/ $PUBLIC_DIR
+    - mv documentation/html/ $PUBLIC_DIR
   artifacts:
     paths:
       - $PUBLIC_DIR
     expire_in: 1 week
   only:
+    - ToUnity
+
+test_project:
+  image: unityci/editor:ubuntu-2022.3.8f1-base-0.16.1
+  stage: test
+  script:
+    - unity-editor \
+      -batchmode \
+      -nographics \
+      -silent-crashes \
+      -logfile /dev/stdout \
+      -runTests \
+      -testPlatform editmode \
+      -projectPath . \
+      -testResults ./test-results.xml
+  artifacts:
+    when: always
+    paths:
+      - test-results.xml
+    expire_in: 1 week
+  only : 
     - ToUnity
