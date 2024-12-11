@@ -29,7 +29,9 @@ build-docs:
 
 .test-template:
   stage: test
-  image: unityci/editor:ubuntu-2020.1.1f1-android-0.3.0
+  image: unityci/editor:ubuntu-2020.3.30f1-android
+  before_script:
+    - unity-editor -batchmode -nographics -silent-crashes -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD" -serial "$UNITY_LICENSE"
   script:
     - echo "Running tests in $TEST_MODE mode"
     - unity-editor \
