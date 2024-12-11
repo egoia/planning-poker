@@ -29,6 +29,7 @@ build-docs:
 
 .test-template:
   stage: test
+  image: unityci/editor:ubuntu-2020.1.1f1-android-0.3.0
   script:
     - echo "Running tests in $TEST_MODE mode"
     - unity-editor \
