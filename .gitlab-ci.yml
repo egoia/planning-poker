@@ -1,50 +1,84 @@
-name: Test project
+stages:
+  - test
+  - build
+  - deploy
 
-on: [push, pull_request]
+variables:
+  # Indique où GitLab Pages va chercher les fichiers générés
+  PUBLIC_DIR: public
+  UNITY_LICENSE: $UNITY_LICENSE
+  UNITY_EMAIL: $UNITY_EMAIL
+  UNITY_PASSWORD: $UNITY_PASSWORD
 
-jobs:
-  testAllModes:
-    name: Test in ${{ matrix.testMode }}
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        projectPath:
-          - test-project
-        testMode:
-          - playmode
-          - editmode
-          - standalone
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          lfs: true
-      - uses: actions/cache@v3
-        with:
-          path: ${{ matrix.projectPath }}/Library
-          key: Library-${{ matrix.projectPath }}
-          restore-keys: |
-            Library-
-      - uses: game-ci/unity-test-runner@v4
-        id: tests
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-        with:
-          projectPath: ${{ matrix.projectPath }}
-          testMode: ${{ matrix.testMode }}
-          artifactsPath: ${{ matrix.testMode }}-artifacts
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          checkName: ${{ matrix.testMode }} Test Results
-          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+my.assembly.*'
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: Test results for ${{ matrix.testMode }}
-          path: ${{ steps.tests.outputs.artifactsPath }}
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: Coverage results for ${{ matrix.testMode }}
-          path: ${{ steps.tests.outputs.coveragePath }}
+cache:
+  key: "Library-${CI_PROJECT_DIR}"
+  paths:
+    - ${CI_PROJECT_DIR}/test-project/Library
+
+build-docs:
+  stage: build
+  image: ubuntu:latest
+  script:
+    - apt-get update
+    - apt-get install -y doxygen graphviz
+    - doxygen conf/Doxyfile
+  artifacts:
+    paths:
+      - documentation/
+    expire_in: 1 week
+
+.test-template:
+  stage: test
+  script:
+    - echo "Running tests in $TEST_MODE mode"
+    - unity-editor \
+      -batchmode \
+      -nographics \
+      -silent-crashes \
+      -logfile /dev/stdout \
+      -runTests \
+      -testPlatform $TEST_MODE \
+      -projectPath ./test-project \
+      -testResults ./artifacts/test-results-${TEST_MODE}.xml \
+      -coverageOptions "generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+my.assembly.*"
+  artifacts:
+    when: always
+    paths:
+      - artifacts/test-results-${TEST_MODE}.xml
+      - artifacts/${TEST_MODE}-coverage
+    expire_in: 1 week
+
+test_editmode:
+  extends: .test-template
+  variables:
+    TEST_MODE: "editmode"
+  artifacts:
+    paths:
+      - artifacts/editmode-artifacts
+
+test_playmode:
+  extends: .test-template
+  variables:
+    TEST_MODE: "playmode"
+  artifacts:
+    paths:
+      - artifacts/playmode-artifacts
+
+test_standalone:
+  extends: .test-template
+  variables:
+    TEST_MODE: "standalone"
+  artifacts:
+    paths:
+      - artifacts/standalone-artifacts
+
+pages:
+  stage: deploy
+  script:
+    - mv documentation/html/ $PUBLIC_DIR
+  artifacts:
+    paths:
+      - $PUBLIC_DIR
+    expire_in: 1 week
+  only:
+    - ToUnity
