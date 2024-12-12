@@ -26,54 +26,21 @@ build-docs:
       - documentation/
     expire_in: 1 week
 
-.test-template:
+run-tests:
   stage: test
-  image: ubuntu:latest
-  before_script:
-    - unity-editor -batchmode -nographics -silent-crashes -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD" 
+  image: unityci/editor:ubuntu-latest
   script:
-    - echo "Running tests in $TEST_MODE mode"
-    - unity-editor \
-      -batchmode \
-      -nographics \
-      -silent-crashes \
-      -logfile /dev/stdout \
-      -runTests \
-      -testPlatform $TEST_MODE \
-      -projectPath ./test-project \
-      -testResults ./artifacts/test-results-${TEST_MODE}.xml \
-      -coverageOptions "generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+my.assembly.*"
+    - echo "Activating Unity license..."
+    - unity-editor -batchmode -nographics -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD" -serial "$UNITY_LICENSE"
+    - echo "Running tests..."
+    - unity-editor -batchmode -nographics -runTests -testResults TestResults.xml -testPlatform playmode -projectPath ./test-project
   artifacts:
-    when: always
     paths:
-      - artifacts/test-results-${TEST_MODE}.xml
-      - artifacts/${TEST_MODE}-coverage
+      - TestResults.xml
+    reports:
+      junit: TestResults.xml
     expire_in: 1 week
-
-test_editmode:
-  extends: .test-template
-  variables:
-    TEST_MODE: "editmode"
-  artifacts:
-    paths:
-      - artifacts/editmode-artifacts
-
-test_playmode:
-  extends: .test-template
-  variables:
-    TEST_MODE: "playmode"
-  artifacts:
-    paths:
-      - artifacts/playmode-artifacts
-
-test_standalone:
-  extends: .test-template
-  variables:
-    TEST_MODE: "standalone"
-  artifacts:
-    paths:
-      - artifacts/standalone-artifacts
-
+  dependencies: []
 pages:
   stage: deploy
   script:
