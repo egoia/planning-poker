@@ -41,6 +41,7 @@ run-tests:
       junit: TestResults.xml
     expire_in: 1 week
   dependencies: []
+  
 pages:
   stage: deploy
   script:
@@ -51,3 +52,42 @@ pages:
     expire_in: 1 week
   only:
     - ToUnity
+
+.test-template:
+  stage: test
+  image: ubuntu:latest
+  before_script:
+    # Mise à jour et installation des dépendances
+    - apt-get update && apt-get install -y wget gdebi-core curl sudo
+
+    # Ajouter la clé publique et le dépôt Unity Hub
+    - wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+    - echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" | sudo tee /etc/apt/sources.list.d/unityhub.list
+
+    # Installer Unity Hub
+    - apt-get update && apt-get install -y unityhub
+
+    # Installer Unity Editor (remplacez la version par celle que vous utilisez)
+    - unityhub --headless install --version 2021.3.9f1
+
+    # Activer la licence Unity
+    - unityhub --headless activate --username "$UNITY_EMAIL" --password "$UNITY_PASSWORD" --serial "$UNITY_LICENSE"
+  script:
+    - echo "Running tests in $TEST_MODE mode"
+    - unity-editor \
+        -batchmode \
+        -nographics \
+        -silent-crashes \
+        -logfile /dev/stdout \
+        -runTests \
+        -testPlatform $TEST_MODE \
+        -projectPath ./test-project \
+        -testResults ./artifacts/test-results-${TEST_MODE}.xml \
+        -coverageOptions "generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+my.assembly.*"
+  artifacts:
+    when: always
+    paths:
+      - artifacts/test-results-${TEST_MODE}.xml
+      - artifacts/${TEST_MODE}-coverage
+    expire_in: 1 week
+
