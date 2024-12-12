@@ -8,6 +8,10 @@ variables:
   UNITY_LICENSE: $UNITY_LICENSE
   UNITY_EMAIL: $UNITY_USERNAME
   UNITY_PASSWORD: $UNITY_PASSWORD
+  IMAGE: unityci/editor # https://hub.docker.com/r/unityci/editor
+  IMAGE_VERSION: 3 # This will automatically use latest v3.x.x, see https://github.com/game-ci/docker/releases
+  UNITY_VERSION: 6000.0.25f1
+
 
 cache:
   key: "Library-${CI_PROJECT_DIR}"
@@ -16,7 +20,7 @@ cache:
 
 build-docs:
   stage: build
-  image: ubuntu:latest
+  image: $IMAGE:$UNITY_VERSION-base-$IMAGE_VERSION
   script:
     - apt-get update
     - apt-get install -y doxygen graphviz
