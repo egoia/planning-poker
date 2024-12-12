@@ -33,6 +33,7 @@ build-docs:
 run-tests:
   stage: test
   image: $IMAGE:$UNITY_VERSION-base-$IMAGE_VERSION
+  script:
     - echo "Activating Unity license..."
     - unity-editor -batchmode -nographics -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD" -serial "$UNITY_LICENSE"
     - echo "Running tests..."
