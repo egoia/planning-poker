@@ -4,10 +4,9 @@ stages:
   - deploy
 
 variables:
-  # Indique où GitLab Pages va chercher les fichiers générés
   PUBLIC_DIR: public
   UNITY_LICENSE: $UNITY_LICENSE
-  UNITY_EMAIL: $UNITY_EMAIL
+  UNITY_EMAIL: $UNITY_USERNAME
   UNITY_PASSWORD: $UNITY_PASSWORD
 
 cache:
@@ -29,9 +28,9 @@ build-docs:
 
 .test-template:
   stage: test
-  image: unityci/editor:ubuntu-2020.3.30f1-android
+  image: gableroux/unity3d
   before_script:
-    - unity-editor -batchmode -nographics -silent-crashes -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD" -serial "$UNITY_LICENSE"
+    - unity-editor -batchmode -nographics -silent-crashes -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD" 
   script:
     - echo "Running tests in $TEST_MODE mode"
     - unity-editor \
