@@ -1,0 +1,4 @@
+<map id="Fonctionnalite.setNote" name="Fonctionnalite.setNote">
+<area shape="rect" id="node1" title="Setter pour la note associée à la fonctionnalité" alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$classCard.html#a828e5acd69938e77440af1e0b7a06090" title="Retourne la représentation textuelle de la carte." alt="" coords="223,5,329,32"/>
+</map>

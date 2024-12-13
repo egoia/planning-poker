@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quarante_14',['quarante',['../classCard.html#aaa741026219936e10de9e19f1e8e5c60',1,'Card']]]
+  ['numbertocard_18',['numberToCard',['../classCard.html#ada85d34bfc48dded8a5466c1294f24be',1,'Card']]]
 ];

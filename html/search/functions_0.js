@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numbertocard_31',['numberToCard',['../classCard.html#ada85d34bfc48dded8a5466c1294f24be',1,'Card']]]
+  ['appmanager_40',['AppManager',['../classAppManager.html#ad2c92896b98b0f35b3dd76575ee22bc9',1,'AppManager']]]
 ];

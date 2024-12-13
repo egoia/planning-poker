@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['toint_32',['toInt',['../classCard.html#ac33b4ba561f873150e5f842c1113e085',1,'Card']]],
-  ['tostring_33',['toString',['../classCard.html#a828e5acd69938e77440af1e0b7a06090',1,'Card']]]
+  ['getcurrent_41',['getCurrent',['../classAppManager.html#a571fe30eff0d41e7c9aedfd17c69cd6e',1,'AppManager']]],
+  ['getdescription_42',['getDescription',['../classFonctionnalite.html#ae0de88b80675a4af073ae6a9ff221ff1',1,'Fonctionnalite']]],
+  ['getnom_43',['getNom',['../classFonctionnalite.html#a5cd45852f1639e2b07106be4de1530ac',1,'Fonctionnalite']]],
+  ['getnote_44',['getNote',['../classFonctionnalite.html#a43ab8e680e83d76a5d0a9cb2f0913f45',1,'Fonctionnalite']]]
 ];

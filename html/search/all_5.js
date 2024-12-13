@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joker_8',['joker',['../classCard.html#a87fb4e1d321952425a5719a9686cbd93',1,'Card']]]
+  ['huit_11',['huit',['../classCard.html#aa0a47177e9f8dd477e72364752538da2',1,'Card']]]
 ];
