@@ -35,7 +35,7 @@ run-tests:
   image: $IMAGE:$UNITY_VERSION-base-$IMAGE_VERSION
   script:
     - echo "Activating Unity license..."
-    - unity-editor -batchmode -nographics -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD"
+    - unity-editor -batchmode -nographics -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD" -serial "$UNITY_LICENSE"
     - echo "Running tests..."
     - unity-editor -batchmode -nographics -runTests -testResults TestResults.xml -testPlatform playmode -projectPath ./test-project
   artifacts:
