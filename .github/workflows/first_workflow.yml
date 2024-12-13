@@ -13,20 +13,22 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        projectPath:
+          - projet
         testMode:
           - playmode
           - editmode
           - standalone
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           lfs: true
       - uses: actions/cache@v3
         with:
-          path: ./Library
-          key: Library-${{ runner.os }}-${{ hashFiles('**/Packages/manifest.json') }}
+          path: ${{ matrix.projectPath }}/Library
+          key: Library-${{ matrix.projectPath }}
           restore-keys: |
-            Library-${{ runner.os }}-
+            Library-
       - uses: game-ci/unity-test-runner@v4
         id: tests
         env:
@@ -34,7 +36,7 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          projectPath: .
+          projectPath: ${{ matrix.projectPath }}
           testMode: ${{ matrix.testMode }}
           artifactsPath: ./${{ matrix.testMode }}-artifacts
           githubToken: ${{ secrets.GITHUB_TOKEN }}
@@ -44,9 +46,9 @@ jobs:
         if: always()
         with:
           name: Test results for ${{ matrix.testMode }}
-          path: ./${{ matrix.testMode }}-artifacts
+          path: ${{ steps.tests.outputs.artifactsPath }}
       - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: Coverage results for ${{ matrix.testMode }}
-          path: ./${{ matrix.testMode }}-coverage
+          path: ${{ steps.tests.outputs.coveragePath }}
