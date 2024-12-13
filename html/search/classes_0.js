@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['appmanager_5',['AppManager',['../classAppManager.html',1,'']]]
+  ['appmanager_26',['AppManager',['../classAppManager.html',1,'']]]
 ];
