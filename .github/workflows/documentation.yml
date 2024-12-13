@@ -1,9 +1,9 @@
-name: Build and Deploy Doxygen Documentation
+name: Generate Doxygen Documentation
 
 on:
   push:
     branches:
-      - ToUnity
+      - main
 
 jobs:
   build:
@@ -13,16 +13,18 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y doxygen graphviz
+    - name: Install Doxygen
+      run: sudo apt-get install doxygen -y
+
+    - name : Install Dot
+      run : sudo apt-get install graphviz -y
 
     - name: Generate Documentation
       run: doxygen conf/Doxyfile
 
     - name: Deploy Documentation
+    
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./html
+        publish_dir: ./documentation
