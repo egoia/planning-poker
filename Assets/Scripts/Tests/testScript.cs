@@ -11,7 +11,6 @@ public class testScript
     public void testScriptSimplePasses()
     {
         // Use the Assert class to test conditions
-        throw new Exception("lala ############## FAIL ");
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
