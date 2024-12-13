@@ -3,7 +3,8 @@ name: Generate Doxygen Documentation
 on:
   push:
     branches:
-      - main
+      - ToUnity
+  workflow_dispatch: # Permet le déclenchement manuel
 
 jobs:
   build:
