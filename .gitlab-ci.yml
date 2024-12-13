@@ -6,7 +6,7 @@ stages:
 variables:
   PUBLIC_DIR: public
   UNITY_LICENSE: $UNITY_LICENSE
-  UNITY_EMAIL: $UNITY_USERNAME
+  UNITY_USERNAME: $UNITY_USERNAME
   UNITY_PASSWORD: $UNITY_PASSWORD
   IMAGE: unityci/editor # https://hub.docker.com/r/unityci/editor
   IMAGE_VERSION: 3 # This will automatically use latest v3.x.x, see https://github.com/game-ci/docker/releases
@@ -35,7 +35,7 @@ run-tests:
   image: $IMAGE:$UNITY_VERSION-base-$IMAGE_VERSION
   script:
     - echo "Activating Unity license..."
-    - unity-editor -batchmode -nographics -quit -username "$UNITY_EMAIL" -password "$UNITY_PASSWORD" -serial "$UNITY_LICENSE"
+    - unity-editor -batchmode -nographics -quit -username "$UNITY_USERNAME" -password "$UNITY_PASSWORD" -serial "$UNITY_LICENSE"
     - echo "Running tests..."
     - unity-editor -batchmode -nographics -runTests -testResults TestResults.xml -testPlatform playmode -projectPath ./test-project
   artifacts:
@@ -75,7 +75,7 @@ pages:
     - unityhub --headless install --version 2021.3.9f1
 
     # Activer la licence Unity
-    - unityhub --headless activate --username "$UNITY_EMAIL" --password "$UNITY_PASSWORD" --serial "$UNITY_LICENSE"
+    - unityhub --headless activate --username "$UNITY_USERNAME" --password "$UNITY_PASSWORD" --serial "$UNITY_LICENSE"
   script:
     - echo "Running tests in $TEST_MODE mode"
     - unity-editor \
