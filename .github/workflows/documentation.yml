@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - ToUnity
+  workflow_dispatch:
 
 jobs:
   build:
