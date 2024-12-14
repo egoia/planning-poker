@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['card_36',['Card',['../classCard.html',1,'']]]
+  ['card_38',['Card',['../classCard.html',1,'']]],
+  ['cardslot_39',['CardSlot',['../classCardSlot.html',1,'']]]
 ];

@@ -1,0 +1,10 @@
+<map id="CardSlot" name="CardSlot">
+<area shape="rect" id="node1" title=" " alt="" coords="25,492,203,613"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,129,83"/>
+<area shape="rect" id="node3" href="$classDragCard.html" title=" " alt="" coords="316,132,504,429"/>
+<area shape="rect" id="node4" title=" " alt="" coords="154,5,311,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="336,5,484,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="508,5,616,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="640,5,772,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="796,5,941,83"/>
+</map>
