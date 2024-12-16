@@ -8,6 +8,7 @@ public class CardSlot : MonoBehaviour
     public RectTransform handPos;
     public float triggerDist;
     public Vector2 cardSize;
+    public DragCard card;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,11 +27,13 @@ public class CardSlot : MonoBehaviour
     void Update()
     {
         foreach (DragCard c in hand){
-            if(Vector2.Distance(c.gameObject.GetComponent<RectTransform>().anchoredPosition, gameObject.GetComponent<RectTransform>().anchoredPosition) <= triggerDist && c.isDraged){
+            if(Vector2.Distance(c.gameObject.GetComponent<RectTransform>().anchoredPosition, gameObject.GetComponent<RectTransform>().anchoredPosition) <= triggerDist && c.isDraged&& card==null){
                 c.isSloted = true;
+                card = c;
             }
             else if(c.isSloted){
                 c.isSloted = false;
+                card=null;
             }
         }
     }

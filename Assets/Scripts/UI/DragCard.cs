@@ -42,7 +42,13 @@ public class DragCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         RectTransform rectTransform = GetComponent<RectTransform>();
         if (rectTransform != null)
         {
-            rectTransform.anchoredPosition += eventData.delta;
+            Vector2 localPoint;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                GameObject.FindGameObjectWithTag("GameCanva").transform as RectTransform,
+                eventData.position,
+                GameObject.FindGameObjectWithTag("GameCanva").GetComponent<Canvas>().worldCamera,
+                out localPoint);
+            rectTransform.anchoredPosition = localPoint;
         }
     }
 
