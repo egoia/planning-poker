@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['un_72',['un',['../classCard.html#aed30b611ae63e826269165dbab357650',1,'Card']]]
+  ['un_74',['un',['../classCard.html#aed30b611ae63e826269165dbab357650',1,'Card']]]
 ];
