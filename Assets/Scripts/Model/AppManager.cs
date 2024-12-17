@@ -60,7 +60,7 @@ namespace PlanningPoker{
             
             int i =0;
             foreach (Fonctionnalite f in  fonctionnalites) {
-                if(f.getNote()==null)break;
+                if(f.getNote()==null || f.getNote()=="")break;
                 else i++;
             }
             current_fonc = i; 
