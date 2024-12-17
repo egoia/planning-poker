@@ -35,14 +35,17 @@ namespace PlanningPoker{
         /// Initialise les fonctionnalités à partir du fichier JSON, et sélectionne le mode de jeu 
         public AppManager(string file, Validator.Validate mode) 
         {
-            if (File.Exists(file)){
+            if (File.Exists(file))
+            {
                 this.file=file;
                 string jsonData = File.ReadAllText(file);
 
-                this.fonctionnalites = JsonUtility.FromJson<Fonctionnalite[]>(jsonData);
+                FonctionnaliteWrapper wrapper = JsonUtility.FromJson<FonctionnaliteWrapper>(jsonData);
+                this.fonctionnalites = wrapper.fonctionnalites;
 
             }
             else Debug.Log("fichier inexistant");
+            
             int i =0;
             foreach (Fonctionnalite f in  fonctionnalites) {
                 if(f.getNote()==null)break;
@@ -56,8 +59,15 @@ namespace PlanningPoker{
         ///
         /// Convertit les données des fonctionnalités en JSON et les écrit dans le fichier
         public void save() {
+            try 
+            {
             string newJsonData = JsonUtility.ToJson(fonctionnalites, true);
             File.WriteAllText(this.file, newJsonData);
+            }
+            catch (IOException e)
+            {
+                Debug.LogError("Erreur lors de la sauvegarde du fichier: " + e.Message);
+            }
         }
 
         /// @brief Obtient la fonctionnalité actuellement en cours d'estimation

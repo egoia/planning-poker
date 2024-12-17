@@ -66,4 +66,10 @@ namespace PlanningPoker{
         }
 
     }
+
+    [System.Serializable]
+    public class FonctionnaliteWrapper
+    {
+        public Fonctionnalite[] fonctionnalites;
+    }
 }
