@@ -62,7 +62,7 @@ namespace PlanningPoker{
         /// @param note: La note à attribuer (instance de Card)
         public void setNote(Card note) 
         {
-            this.note = note.toString();
+            this.note = note != null ? note.toString() : null;
         }
 
     }
