@@ -41,13 +41,13 @@ public class testScript
     {
         Card[] cartes = {Card.trois, Card.cinq, Card.treize, Card.trois, Card.joker};
         Card res = Validator.mediane(cartes);
-        Assert.AreEqual(Card.trois, res, "Validator.mediane ne calcule pas correctement la mediane");
+        Assert.AreEqual(Card.cinq, res, "Validator.mediane ne calcule pas correctement la mediane");
     }
 
     [Test]
     public void test_mode_majorite_absolue()
     {
-        Card[] cartes = {Card.trois, Card.cinq, Card.treize, Card.trois, Card.trois, Card.joker};
+        Card[] cartes = {Card.trois, Card.cinq, Card.trois, Card.treize, Card.trois, Card.trois, Card.joker};
         Card res = Validator.majorite_absolue(cartes);
         Assert.AreEqual(Card.trois, res, "Validator.majorite_absolue ne calcule pas correctement la majorité absolue");
     }
@@ -112,7 +112,7 @@ public class testScript
 
     [Test]
     public void test_joueTour_maj_fonctionnalites()
-    {
+    { 
         var appManager = new AppManager(testFilePath, Validator.moyenne);
         Card[] cartes = { Card.cinq, Card.cinq, Card.cinq };
         int res = appManager.joue_tour(cartes);
