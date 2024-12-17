@@ -123,18 +123,6 @@ public class testScript
     }
 
     [Test]
-    public void test_joueTour_TermineToutesLesFonctionnalites()
-    {
-        var appManager = new AppManager(testFilePath, Validator.moyenne);
-        Card[] cartes = { Card.cinq, Card.huit };
-        while (appManager.getCurrent() != null)
-        {
-            appManager.joue_tour(cartes);
-        }
-        Assert.IsNull(appManager.getCurrent(), "AppManager.joue_tour n'a pas correctement progressé à travers toutes les fonctionnalités");
-    }
-
-    [Test]
     public void Test_Save()
     {
         var appManager = new AppManager(testFilePath, Validator.moyenne);

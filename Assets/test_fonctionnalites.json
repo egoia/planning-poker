@@ -1,0 +1,19 @@
+{
+    "fonctionnalites": [
+        {
+            "nom": "Fonctionnalité 1",
+            "description": "Description 1",
+            "note": ""
+        },
+        {
+            "nom": "Fonctionnalité 2",
+            "description": "Description 2",
+            "note": ""
+        },
+        {
+            "nom": "Fonctionnalité 3",
+            "description": "Description 3",
+            "note": ""
+        }
+    ]
+}

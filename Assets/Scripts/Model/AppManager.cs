@@ -39,7 +39,6 @@ namespace PlanningPoker{
             {
                 this.file=file;
                 string jsonData = File.ReadAllText(file);
-                Debug.Log("jsonData #### : " + jsonData);
 
                 FonctionnaliteWrapper wrapper = JsonUtility.FromJson<FonctionnaliteWrapper>(jsonData);
                 if (wrapper == null)
@@ -72,7 +71,6 @@ namespace PlanningPoker{
         ///
         /// Convertit les données des fonctionnalités en JSON et les écrit dans le fichier
         public void save() {
-            Debug.Log("Sauvegarde de l'état : " + current_fonc);
             try 
             {
             string newJsonData = JsonUtility.ToJson(new FonctionnaliteWrapper { fonctionnalites = fonctionnalites }, true);
@@ -83,7 +81,6 @@ namespace PlanningPoker{
             {
                 Debug.LogError("Erreur lors de la sauvegarde du fichier: " + e.Message);
             }
-            Debug.Log("Chargement de l'état : " + current_fonc);
         }
 
         /// @brief Obtient la fonctionnalité actuellement en cours d'estimation
@@ -116,7 +113,6 @@ namespace PlanningPoker{
             if(carte == Card.cafe) return -2;
             if(carte == Card.joker) return -1;
             this.fonctionnalites[current_fonc].setNote(carte);
-            Debug.Log("HHHHHHHHHHHHHHHH " + carte.toString());
             this.current_fonc++;
             this.tour++;
             return 1;
