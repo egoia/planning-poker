@@ -77,7 +77,7 @@ public class testScript
     {
         
         // Créer un fichier JSON temporaire pour les tests
-        testFilePath = "test_fonctionnalites.json";
+        testFilePath = Path.Combine(Application.dataPath, "test_fonctionnalites.json");
         Fonctionnalite f1 = new Fonctionnalite();
         f1.setNom( "Fonctionnalité 1");
         f1.setDescription("Description 1");
@@ -94,7 +94,10 @@ public class testScript
         f3.setNote(null);
         
         var fonctionnalites = new[]{f1,f2,f3};
-        File.WriteAllText(testFilePath, JsonUtility.ToJson(fonctionnalites, true));
+        string jsonData = JsonUtility.ToJson(new FonctionnaliteWrapper { fonctionnalites = fonctionnalites }, true);
+        File.WriteAllText(testFilePath, jsonData);
+
+        Assert.IsTrue(File.Exists(testFilePath), "Le fichier de test n'a pas été créé correctement.");
     }
 
     [TearDown]
