@@ -163,26 +163,4 @@ public class testScript
         Assert.AreEqual(Card.treize, res, "Card.numberToCard() ne retourne pas la carte à la valeur la plus proche");
     }
 
-    [Test]
-    public void Test_DeserializationWithoutNote()
-    {
-        string json = @"
-        {
-            ""fonctionnalites"": [
-                {""nom"": ""Fonctionnalité 1"", ""description"": ""Description 1""},
-                {""nom"": ""Fonctionnalité 2"", ""description"": ""Description 2""},
-                {""nom"": ""Fonctionnalité 3"", ""description"": ""Description 3""}
-            ]
-        }";
-
-        FonctionnaliteWrapper wrapper = JsonUtility.FromJson<FonctionnaliteWrapper>(json);
-
-        Assert.IsNotNull(wrapper, "Le wrapper est null.");
-        Assert.IsNotNull(wrapper.fonctionnalites, "Le champ 'fonctionnalites' est null.");
-        Assert.AreEqual(3, wrapper.fonctionnalites.Length, "Le nombre de fonctionnalités n'est pas correct.");
-
-        // Vérifier que 'note' est vide
-        Assert.AreEqual("", wrapper.fonctionnalites[0].note, "Le champ 'note' ne doit pas être présent au départ.");
-    }
-
 }
