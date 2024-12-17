@@ -41,20 +41,18 @@ namespace PlanningPoker{
                 string jsonData = File.ReadAllText(file);
 
                 FonctionnaliteWrapper wrapper = JsonUtility.FromJson<FonctionnaliteWrapper>(jsonData);
-                if (wrapper != null)
+                if (wrapper == null)
                 {
-                    Debug.Log("Wrapper désérialisé avec succès.");
-                    if (wrapper.fonctionnalites != null)
-                    {
-                        foreach (var f in wrapper.fonctionnalites)
-                        {
-                            Debug.Log($"Fonctionnalité chargée : {f.nom}, {f.description}, {f.note}");
-                        }
-                    }
-                    else
-                    {
-                        Debug.LogError("Le champ 'fonctionnalites' est null.");
-                    }
+                    Debug.LogError("Le JSON est mal formé ou incompatible avec FonctionnaliteWrapper.");
+                }
+                else if (wrapper.fonctionnalites == null || wrapper.fonctionnalites.Length == 0)
+                {
+                    Debug.LogError("Le fichier JSON est valide mais ne contient aucune fonctionnalité.");
+                }
+                else
+                {
+                    fonctionnalites = wrapper.fonctionnalites;
+                    Debug.Log("Fonctionnalités chargées : " + fonctionnalites.Length);
                 }
 
             }

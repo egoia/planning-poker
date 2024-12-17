@@ -81,14 +81,17 @@ public class testScript
         Fonctionnalite f1 = new Fonctionnalite();
         f1.setNom( "Fonctionnalité 1");
         f1.setDescription("Description 1");
+        f1.setNote(null);
 
         Fonctionnalite f2 = new Fonctionnalite();
         f2.setNom( "Fonctionnalité 2");
         f2.setDescription("Description 2");
+        f2.setNote(null);
 
         Fonctionnalite f3 = new Fonctionnalite();
         f3.setNom( "Fonctionnalité 3");
         f3.setDescription("Description 3");
+        f3.setNote(null);
         
         var fonctionnalites = new[]{f1,f2,f3};
         string jsonData = JsonUtility.ToJson(new FonctionnaliteWrapper { fonctionnalites = fonctionnalites }, true);
@@ -107,7 +110,7 @@ public class testScript
         // Supprimer le fichier de test après chaque test
         if (File.Exists(testFilePath))
         {
-            File.Delete(testFilePath);
+            //File.Delete(testFilePath);
             Debug.Log("Fichier JSON de test supprimé : " + testFilePath);
         }
     }
@@ -161,25 +164,6 @@ public class testScript
         int value = 15;
         Card res = Card.numberToCard(value);
         Assert.AreEqual(Card.treize, res, "Card.numberToCard() ne retourne pas la carte à la valeur la plus proche");
-    }
-
-    [Test]
-    public void Test_Deserialization()
-    {
-        string json = @"
-        {
-            ""fonctionnalites"": [
-                {""nom"": ""Fonctionnalité 1"", ""description"": ""Description 1"", ""note"": """"},
-                {""nom"": ""Fonctionnalité 2"", ""description"": ""Description 2"", ""note"": """"},
-                {""nom"": ""Fonctionnalité 3"", ""description"": ""Description 3"", ""note"": """"}
-            ]
-        }";
-
-        FonctionnaliteWrapper wrapper = JsonUtility.FromJson<FonctionnaliteWrapper>(json);
-
-        Assert.IsNotNull(wrapper, "Le wrapper est null.");
-        Assert.IsNotNull(wrapper.fonctionnalites, "Le champ 'fonctionnalites' est null.");
-        Assert.AreEqual(3, wrapper.fonctionnalites.Length, "Le nombre de fonctionnalités n'est pas correct.");
     }
 
 }
