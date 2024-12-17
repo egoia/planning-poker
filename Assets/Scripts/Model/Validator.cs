@@ -81,9 +81,7 @@ namespace PlanningPoker{
                 int v2 = cartes_tmp[nb_cartes/2];
                 mediane = (v1+v2)/2;
             }
-            Debug.Log("Médiane calculée : " + mediane);
-            Card result = Card.numberToCard(mediane);
-            Debug.Log("Carte retournée : " + result.ToString());
+            
             return Card.numberToCard(mediane);
         };
 

@@ -98,6 +98,10 @@ public class testScript
         File.WriteAllText(testFilePath, jsonData);
 
         Assert.IsTrue(File.Exists(testFilePath), "Le fichier de test n'a pas été créé correctement.");
+        string content = File.ReadAllText(testFilePath);
+        Assert.IsFalse(string.IsNullOrEmpty(content), "Le fichier JSON généré est vide.");
+        Debug.Log("Fichier JSON de test généré avec succès : " + testFilePath);
+        Debug.Log("Contenu du fichier JSON : " + content);
     }
 
     [TearDown]
@@ -106,7 +110,8 @@ public class testScript
         // Supprimer le fichier de test après chaque test
         if (File.Exists(testFilePath))
         {
-            File.Delete(testFilePath);
+            //File.Delete(testFilePath);
+            Debug.Log("Fichier JSON de test supprimé : " + testFilePath);
         }
     }
 
@@ -139,6 +144,7 @@ public class testScript
         Card[] cartes = { Card.huit };
         appManager.joue_tour(cartes);
         appManager.save();
+        Assert.IsTrue(File.Exists(testFilePath), "Le fichier n'a pas été créé après la sauvegarde.");
         var reloadedManager = new AppManager(testFilePath, Validator.moyenne);
         Assert.AreEqual("Fonctionnalité 2", reloadedManager.getCurrent().getNom(), "Le gestionnaire ne devrait pas perdre sa progression après un sauvegarde/chargement.");
     }
