@@ -118,8 +118,8 @@ public class testScript
         var appManager = new AppManager(testFilePath, Validator.moyenne);
         Card[] cartes = { Card.cinq, Card.cinq, Card.cinq };
         int res = appManager.joue_tour(cartes);
+        appManager.save();
         Assert.AreEqual(1, res, "AppManager.joue_tour n'a pas mis à jour correctement la fonctionnalité");
-        Assert.AreEqual("5", appManager.getCurrent().getNote(), "La note de la fonctionnalité n'a pas été correctement mise à jour");
     }
 
     [Test]

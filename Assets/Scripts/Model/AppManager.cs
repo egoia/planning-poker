@@ -39,6 +39,7 @@ namespace PlanningPoker{
             {
                 this.file=file;
                 string jsonData = File.ReadAllText(file);
+                Debug.Log("jsonData #### : " + jsonData);
 
                 FonctionnaliteWrapper wrapper = JsonUtility.FromJson<FonctionnaliteWrapper>(jsonData);
                 if (wrapper == null)
@@ -74,8 +75,9 @@ namespace PlanningPoker{
             Debug.Log("Sauvegarde de l'état : " + current_fonc);
             try 
             {
-            string newJsonData = JsonUtility.ToJson(fonctionnalites, true);
+            string newJsonData = JsonUtility.ToJson(new FonctionnaliteWrapper { fonctionnalites = fonctionnalites }, true);
             File.WriteAllText(this.file, newJsonData);
+            Debug.Log("Sauvegarde effectuée avec succès.");
             }
             catch (IOException e)
             {
@@ -114,7 +116,7 @@ namespace PlanningPoker{
             if(carte == Card.cafe) return -2;
             if(carte == Card.joker) return -1;
             this.fonctionnalites[current_fonc].setNote(carte);
-            Debug.Log("" + carte.ToString());
+            Debug.Log("HHHHHHHHHHHHHHHH " + carte.toString());
             this.current_fonc++;
             this.tour++;
             return 1;
