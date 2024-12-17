@@ -59,6 +59,8 @@ namespace PlanningPoker{
         /// - Si aucune carte valide n'est présente, retourne un joker
         /// @param cartes: Tableau de cartes correspondant aux votes
         /// @return: La carte correspondant à la médiane 
+        /// 3, 5, 13, 3 joker
+        ///  3, 3, 5, 13
         public static readonly Validate mediane = (Card[] cartes) => {
             int nb_cafes = 0;
             int nb_jokers = 0;
@@ -73,12 +75,15 @@ namespace PlanningPoker{
             int mediane;
             if(nb_cafes>nb_cartes)return Card.cafe;
             if(nb_cartes==0) return Card.joker;
-            if(nb_cartes%2==1) mediane = (int)(cartes_tmp[((nb_cartes/2)+1)]);
+            if(nb_cartes%2==1) mediane = cartes_tmp[nb_cartes/2];
             else{
-                int v1 = (int)(cartes_tmp[(nb_cartes/2)+1]);
-                int v2 = (int)(cartes_tmp[(nb_cartes/2)]);
+                int v1 = cartes_tmp[(nb_cartes/2)-1];
+                int v2 = cartes_tmp[nb_cartes/2];
                 mediane = (v1+v2)/2;
             }
+            Debug.Log("Médiane calculée : " + mediane);
+            Card result = Card.numberToCard(mediane);
+            Debug.Log("Carte retournée : " + result.ToString());
             return Card.numberToCard(mediane);
         };
 

@@ -23,6 +23,9 @@ namespace PlanningPoker{
         /// @brief Note associée à la fonctionnalité, sous forme de chaîne de caractères
         [SerializeField]private string note;
 
+        /// @brief Constructeur par défaut de la classe Fonctionnalite
+        public Fonctionnalite() { }
+
         /// @brief Getter pour le nom de la fonctionnalité
         /// @return: Le nom de la fonctionnalité
         public string getNom() 

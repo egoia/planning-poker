@@ -41,7 +41,14 @@ namespace PlanningPoker{
                 string jsonData = File.ReadAllText(file);
 
                 FonctionnaliteWrapper wrapper = JsonUtility.FromJson<FonctionnaliteWrapper>(jsonData);
-                this.fonctionnalites = wrapper.fonctionnalites;
+                if (wrapper == null || wrapper.fonctionnalites == null || wrapper.fonctionnalites.Length == 0)
+                {
+                    Debug.LogError("Le fichier JSON est invalide ou vide.");
+                }
+                else
+                {
+                    fonctionnalites = wrapper.fonctionnalites;
+                }
 
             }
             else Debug.Log("fichier inexistant");
@@ -59,6 +66,7 @@ namespace PlanningPoker{
         ///
         /// Convertit les données des fonctionnalités en JSON et les écrit dans le fichier
         public void save() {
+            Debug.Log("Sauvegarde de l'état : " + current_fonc);
             try 
             {
             string newJsonData = JsonUtility.ToJson(fonctionnalites, true);
@@ -68,6 +76,7 @@ namespace PlanningPoker{
             {
                 Debug.LogError("Erreur lors de la sauvegarde du fichier: " + e.Message);
             }
+            Debug.Log("Chargement de l'état : " + current_fonc);
         }
 
         /// @brief Obtient la fonctionnalité actuellement en cours d'estimation
