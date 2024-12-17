@@ -21,7 +21,7 @@ namespace PlanningPoker{
         [SerializeField]private string description;
 
         /// @brief Note associée à la fonctionnalité, sous forme de chaîne de caractères
-        [SerializeField]private string note;
+        [SerializeField]private string note = "";
 
         /// @brief Constructeur par défaut de la classe Fonctionnalite
         public Fonctionnalite() { }
