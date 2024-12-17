@@ -41,7 +41,7 @@ public class testScript
     {
         Card[] cartes = {Card.trois, Card.cinq, Card.treize, Card.trois, Card.joker};
         Card res = Validator.mediane(cartes);
-        Assert.AreEqual(Card.cinq, res, "Validator.mediane ne calcule pas correctement la mediane");
+        Assert.AreEqual(Card.cinq.toInt(), res.toInt(), "Validator.mediane ne calcule pas correctement la mediane");
     }
 
     [Test]
