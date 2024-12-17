@@ -1,0 +1,4 @@
+<map id="PlanningPoker.Fonctionnalite.setNote" name="PlanningPoker.Fonctionnalite.setNote">
+<area shape="rect" id="node1" title="Setter pour la note associée à la fonctionnalité" alt="" coords="5,5,269,32"/>
+<area shape="rect" id="node2" href="$classPlanningPoker_1_1Card.html#aeee0070542af3ad678dd43e6b4e1ff0d" title="Retourne la représentation textuelle de la carte." alt="" coords="317,5,520,32"/>
+</map>

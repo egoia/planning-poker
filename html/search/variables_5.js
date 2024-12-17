@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quarante_70',['quarante',['../classCard.html#aaa741026219936e10de9e19f1e8e5c60',1,'Card']]]
+  ['quarante_72',['quarante',['../classPlanningPoker_1_1Card.html#a56168695084dfece15638fd8d79efa2c',1,'PlanningPoker::Card']]]
 ];

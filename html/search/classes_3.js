@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fonctionnalite_43',['Fonctionnalite',['../classFonctionnalite.html',1,'']]]
+  ['fonctionnalite_44',['Fonctionnalite',['../classFonctionnalite.html',1,'Fonctionnalite'],['../classPlanningPoker_1_1Fonctionnalite.html',1,'PlanningPoker.Fonctionnalite']]]
 ];

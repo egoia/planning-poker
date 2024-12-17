@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['huit_64',['huit',['../classCard.html#aa0a47177e9f8dd477e72364752538da2',1,'Card']]]
+  ['huit_66',['huit',['../classPlanningPoker_1_1Card.html#a51b6435743b23d21a118c03978102b6a',1,'PlanningPoker::Card']]]
 ];

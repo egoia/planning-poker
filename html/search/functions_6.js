@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validate_59',['Validate',['../classValidator.html#aac49e241ad5af3d4a51f28cf3d616cbc',1,'Validator']]]
+  ['validate_61',['Validate',['../classPlanningPoker_1_1Validator.html#ae784c11e68040194319cc554fe1db881',1,'PlanningPoker::Validator']]]
 ];

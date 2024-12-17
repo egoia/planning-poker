@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joker_65',['joker',['../classCard.html#a87fb4e1d321952425a5719a9686cbd93',1,'Card']]]
+  ['joker_67',['joker',['../classPlanningPoker_1_1Card.html#a8e051e982c1bf86291b7cc5b0c5683de',1,'PlanningPoker::Card']]]
 ];

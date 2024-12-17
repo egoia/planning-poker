@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['getcurrent_47',['getCurrent',['../classAppManager.html#a571fe30eff0d41e7c9aedfd17c69cd6e',1,'AppManager']]],
-  ['getdescription_48',['getDescription',['../classFonctionnalite.html#ae0de88b80675a4af073ae6a9ff221ff1',1,'Fonctionnalite']]],
-  ['getnom_49',['getNom',['../classFonctionnalite.html#a5cd45852f1639e2b07106be4de1530ac',1,'Fonctionnalite']]],
-  ['getnote_50',['getNote',['../classFonctionnalite.html#a43ab8e680e83d76a5d0a9cb2f0913f45',1,'Fonctionnalite']]]
+  ['getcurrent_49',['getCurrent',['../classPlanningPoker_1_1AppManager.html#aab28663b8514785b9dc38b845d47c62c',1,'PlanningPoker::AppManager']]],
+  ['getdescription_50',['getDescription',['../classPlanningPoker_1_1Fonctionnalite.html#ae7c520d6348f40ac85679a803034ac16',1,'PlanningPoker::Fonctionnalite']]],
+  ['getnom_51',['getNom',['../classPlanningPoker_1_1Fonctionnalite.html#a841cf84389a63c7e19fdc114711a75d8',1,'PlanningPoker::Fonctionnalite']]],
+  ['getnote_52',['getNote',['../classPlanningPoker_1_1Fonctionnalite.html#ad688c9650bfa2642f032b2d8466c9415',1,'PlanningPoker::Fonctionnalite']]]
 ];

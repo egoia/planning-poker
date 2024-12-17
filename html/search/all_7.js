@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['majorite_5fabsolue_17',['majorite_absolue',['../classValidator.html#a81e0832c7914813494c82a715b12984c',1,'Validator']]],
-  ['majorite_5frelative_18',['majorite_relative',['../classValidator.html#a4312bed7a18d192ef371fb17a6841d2c',1,'Validator']]],
-  ['mediane_19',['mediane',['../classValidator.html#aa1da5c84e35572cee1a805e21f1cd08f',1,'Validator']]],
-  ['moyenne_20',['moyenne',['../classValidator.html#a20b84f65a06dd410047123eddb15201b',1,'Validator']]]
+  ['majorite_5fabsolue_17',['majorite_absolue',['../classPlanningPoker_1_1Validator.html#a6f532cfc575351413b464380f290f5dc',1,'PlanningPoker::Validator']]],
+  ['majorite_5frelative_18',['majorite_relative',['../classPlanningPoker_1_1Validator.html#acc08d77adbac1ad15a9d1a2450848420',1,'PlanningPoker::Validator']]],
+  ['mediane_19',['mediane',['../classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f',1,'PlanningPoker::Validator']]],
+  ['moyenne_20',['moyenne',['../classPlanningPoker_1_1Validator.html#a6622d5a1cead940008daa4ebacb09b6d',1,'PlanningPoker::Validator']]]
 ];

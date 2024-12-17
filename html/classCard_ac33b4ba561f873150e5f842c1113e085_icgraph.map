@@ -1,4 +1,0 @@
-<map id="Card.toInt" name="Card.toInt">
-<area shape="rect" id="node1" title="Convertit la carte en une valeur int." alt="" coords="204,5,291,32"/>
-<area shape="rect" id="node2" href="$classCard.html#ada85d34bfc48dded8a5466c1294f24be" title="Associe une valeur numérique à la carte correspondante dans le pool." alt="" coords="5,5,156,32"/>
-</map>

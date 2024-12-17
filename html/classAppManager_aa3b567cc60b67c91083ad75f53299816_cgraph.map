@@ -1,5 +1,0 @@
-<map id="AppManager.joue_tour" name="AppManager.joue_tour">
-<area shape="rect" id="node1" title="Joue un tour en évaluant les cartes soumises par les joueurs." alt="" coords="5,5,173,32"/>
-<area shape="rect" id="node2" href="$classFonctionnalite.html#a766bfee66fcd70eec976bf7b520b243a" title="Setter pour la note associée à la fonctionnalité" alt="" coords="221,5,391,32"/>
-<area shape="rect" id="node3" href="$classCard.html#a828e5acd69938e77440af1e0b7a06090" title="Retourne la représentation textuelle de la carte." alt="" coords="439,5,545,32"/>
-</map>
