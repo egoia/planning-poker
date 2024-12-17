@@ -3,6 +3,8 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using System;
+using System.IO;
+using PlanningPoker;
 
 [TestFixture]
 public class testScript
@@ -15,7 +17,7 @@ public class testScript
     {
         Card[] cartes = {Card.cinq, Card.cinq, Card.cinq};
         Card res = Validator.strict(cartes);
-        Assert.AreEqual(Card.cinq, result, "Validator.strict devrait retourner la carte commune")
+        Assert.AreEqual(Card.cinq, res, "Validator.strict devrait retourner la carte commune");
     }
 
     [Test]
@@ -23,7 +25,7 @@ public class testScript
     {
         Card[] cartes = { Card.cinq, Card.deux, Card.cinq};
         Card res = Validator.strict(cartes);
-        Assert.IsNull(res, "Validator.strict devrait retourner null s'il y a une carte différente des autres")
+        Assert.IsNull(res, "Validator.strict devrait retourner null s'il y a une carte différente des autres");
     }
 
     [Test]
@@ -31,7 +33,7 @@ public class testScript
     {
         Card[] cartes = {Card.trois, Card.cinq, Card.treize, Card.trois, Card.joker};
         Card res = Validator.moyenne(cartes);
-        Assert.AreEqual(Card.cinq, res, "Validator.moyenne ne calcule pas correctement la moyenne")
+        Assert.AreEqual(Card.cinq, res, "Validator.moyenne ne calcule pas correctement la moyenne");
     }
 
     [Test]
@@ -39,7 +41,7 @@ public class testScript
     {
         Card[] cartes = {Card.trois, Card.cinq, Card.treize, Card.trois, Card.joker};
         Card res = Validator.mediane(cartes);
-        Assert.AreEqual(Card.trois, res, "Validator.mediane ne calcule pas correctement la mediane")
+        Assert.AreEqual(Card.trois, res, "Validator.mediane ne calcule pas correctement la mediane");
     }
 
     [Test]
@@ -47,7 +49,7 @@ public class testScript
     {
         Card[] cartes = {Card.trois, Card.cinq, Card.treize, Card.trois, Card.trois, Card.joker};
         Card res = Validator.majorite_absolue(cartes);
-        Assert.AreEqual(Card.trois, res, "Validator.majorite_absolue ne calcule pas correctement la majorité absolue")
+        Assert.AreEqual(Card.trois, res, "Validator.majorite_absolue ne calcule pas correctement la majorité absolue");
     }
 
     [Test]
@@ -55,7 +57,7 @@ public class testScript
     {
         Card[] cartes = {Card.huit, Card.cinq, Card.huit, Card.trois, Card.cafe};
         Card res = Validator.majorite_relative(cartes);
-        Assert.AreEqual(Card.huit, res, "Validator.majorite_relative ne calcule pas correctement la majorité relative")
+        Assert.AreEqual(Card.huit, res, "Validator.majorite_relative ne calcule pas correctement la majorité relative");
     }
 
     [Test]
@@ -63,7 +65,7 @@ public class testScript
     {
         Card[] cartes = {Card.huit, Card.cinq, Card.huit, Card.cinq, Card.cafe};
         Card res = Validator.majorite_relative(cartes);
-        Assert.IsNull(res, "Validator.majorite_relative devrait renvoyer null s'il n'y a pas de majorité")
+        Assert.IsNull(res, "Validator.majorite_relative devrait renvoyer null s'il n'y a pas de majorité");
     }    
 
     // Tests pour AppManager
@@ -73,14 +75,25 @@ public class testScript
     [SetUp]
     public void SetUp()
     {
+        
         // Créer un fichier JSON temporaire pour les tests
         testFilePath = "test_fonctionnalites.json";
-        var fonctionnalites = new[]
-        {
-            new Fonctionnalite { setNom("Fonctionnalité 1"), setDescription("Description 1"), setNote(null) },
-            new Fonctionnalite { setNom("Fonctionnalité 2"), setDescription("Description 2"), setNote(null) },
-            new Fonctionnalite { setNom("Fonctionnalité 3"), setDescription("Description 3"), setNote(null) }
-        };
+        Fonctionnalite f1 = new Fonctionnalite();
+        f1.setNom( "Fonctionnalité 1");
+        f1.setDescription("Description 1");
+        f1.setNote(null);
+
+        Fonctionnalite f2 = new Fonctionnalite();
+        f2.setNom( "Fonctionnalité 2");
+        f2.setDescription("Description 2");
+        f2.setNote(null);
+
+        Fonctionnalite f3 = new Fonctionnalite();
+        f3.setNom( "Fonctionnalité 3");
+        f3.setDescription("Description 3");
+        f3.setNote(null);
+        
+        var fonctionnalites = new[]{f1,f2,f3};
         File.WriteAllText(testFilePath, JsonUtility.ToJson(fonctionnalites, true));
     }
 
