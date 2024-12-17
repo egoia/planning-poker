@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['joue_5ftour_55',['joue_tour',['../classPlanningPoker_1_1AppManager.html#aa299de8d154c12b8e524d42dca2c2fb4',1,'PlanningPoker::AppManager']]]
+  ['getcurrent_52',['getCurrent',['../classPlanningPoker_1_1AppManager.html#aab28663b8514785b9dc38b845d47c62c',1,'PlanningPoker::AppManager']]],
+  ['getdescription_53',['getDescription',['../classPlanningPoker_1_1Fonctionnalite.html#ae7c520d6348f40ac85679a803034ac16',1,'PlanningPoker::Fonctionnalite']]],
+  ['getnom_54',['getNom',['../classPlanningPoker_1_1Fonctionnalite.html#a841cf84389a63c7e19fdc114711a75d8',1,'PlanningPoker::Fonctionnalite']]],
+  ['getnote_55',['getNote',['../classPlanningPoker_1_1Fonctionnalite.html#ad688c9650bfa2642f032b2d8466c9415',1,'PlanningPoker::Fonctionnalite']]]
 ];

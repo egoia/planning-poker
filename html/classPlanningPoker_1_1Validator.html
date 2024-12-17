@@ -274,15 +274,18 @@ Static Public Attributes</h2></td></tr>
 <div class="line">            <span class="keywordtype">int</span> <a class="code" href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">mediane</a>;</div>
 <div class="line">            <span class="keywordflow">if</span>(nb_cafes&gt;nb_cartes)<span class="keywordflow">return</span> <a class="code" href="classCard.html">Card</a>.cafe;</div>
 <div class="line">            <span class="keywordflow">if</span>(nb_cartes==0) <span class="keywordflow">return</span> <a class="code" href="classCard.html">Card</a>.joker;</div>
-<div class="line">            <span class="keywordflow">if</span>(nb_cartes%2==1) <a class="code" href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">mediane</a> = (int)(cartes_tmp[((nb_cartes/2)+1)]);</div>
+<div class="line">            <span class="keywordflow">if</span>(nb_cartes%2==1) <a class="code" href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">mediane</a> = cartes_tmp[nb_cartes/2];</div>
 <div class="line">            <span class="keywordflow">else</span>{</div>
-<div class="line">                <span class="keywordtype">int</span> v1 = (int)(cartes_tmp[(nb_cartes/2)+1]);</div>
-<div class="line">                <span class="keywordtype">int</span> v2 = (int)(cartes_tmp[(nb_cartes/2)]);</div>
+<div class="line">                <span class="keywordtype">int</span> v1 = cartes_tmp[(nb_cartes/2)-1];</div>
+<div class="line">                <span class="keywordtype">int</span> v2 = cartes_tmp[nb_cartes/2];</div>
 <div class="line">                <a class="code" href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">mediane</a> = (v1+v2)/2;</div>
 <div class="line">            }</div>
+<div class="line">            Debug.Log(<span class="stringliteral">&quot;Médiane calculée : &quot;</span> + <a class="code" href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">mediane</a>);</div>
+<div class="line">            <a class="code" href="classCard.html">Card</a> result = <a class="code" href="classCard.html">Card</a>.numberToCard(<a class="code" href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">mediane</a>);</div>
+<div class="line">            Debug.Log(<span class="stringliteral">&quot;Carte retournée : &quot;</span> + result.ToString());</div>
 <div class="line">            <span class="keywordflow">return</span> <a class="code" href="classCard.html">Card</a>.numberToCard(<a class="code" href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">mediane</a>);</div>
 <div class="line">        }</div>
-<div class="ttc" id="aclassPlanningPoker_1_1Validator_html_ae169f48402c6270d65f8630da6733e8f"><div class="ttname"><a href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">PlanningPoker.Validator.mediane</a></div><div class="ttdeci">static readonly Validate mediane</div><div class="ttdoc">Règle de la médiane : retourne la carte la plus proche de la médiane des valeurs.</div><div class="ttdef"><b>Definition:</b> Validator.cs:62</div></div>
+<div class="ttc" id="aclassPlanningPoker_1_1Validator_html_ae169f48402c6270d65f8630da6733e8f"><div class="ttname"><a href="classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f">PlanningPoker.Validator.mediane</a></div><div class="ttdeci">static readonly Validate mediane</div><div class="ttdoc">Règle de la médiane : retourne la carte la plus proche de la médiane des valeurs.</div><div class="ttdef"><b>Definition:</b> Validator.cs:64</div></div>
 </div><!-- fragment -->
 <p>Règle de la médiane : retourne la carte la plus proche de la médiane des valeurs. </p>
 <ul>
@@ -293,8 +296,7 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>: La carte correspondant à la médiane <br  />
- </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>: La carte correspondant à la médiane 3, 5, 13, 3 joker 3, 3, 5, 13 </dd></dl>
 </li>
 </ul>
 
