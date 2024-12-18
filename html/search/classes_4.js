@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mon_5ftesteur_48',['mon_testeur',['../classmon__testeur.html',1,'']]]
+  ['menucontroller_49',['MenuController',['../classMenuController.html',1,'']]],
+  ['mon_5ftesteur_50',['mon_testeur',['../classmon__testeur.html',1,'']]]
 ];

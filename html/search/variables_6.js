@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['strict_78',['strict',['../classPlanningPoker_1_1Validator.html#a6efa7579c4ea490d7a430a799d25eef9',1,'PlanningPoker::Validator']]]
+  ['strict_80',['strict',['../classPlanningPoker_1_1Validator.html#a6efa7579c4ea490d7a430a799d25eef9',1,'PlanningPoker::Validator']]]
 ];
