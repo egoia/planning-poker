@@ -6,5 +6,6 @@ var searchData=
   ['card_3',['card',['../classCard.html',1,'Card'],['../classPlanningPoker_1_1Card.html',1,'PlanningPoker.Card']]],
   ['cardslot_4',['CardSlot',['../classCardSlot.html',1,'']]],
   ['cent_5',['cent',['../classPlanningPoker_1_1Card.html#af53fd4f3897aff1617465ee3159793c9',1,'PlanningPoker::Card']]],
-  ['cinq_6',['cinq',['../classPlanningPoker_1_1Card.html#a15eda93793c7ab8a7d8a9299583d571f',1,'PlanningPoker::Card']]]
+  ['chrono_6',['Chrono',['../classChrono.html',1,'']]],
+  ['cinq_7',['cinq',['../classPlanningPoker_1_1Card.html#a15eda93793c7ab8a7d8a9299583d571f',1,'PlanningPoker::Card']]]
 ];

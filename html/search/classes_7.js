@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resultcontroller_0',['ResultController',['../classResultController.html',1,'']]]
+  ['playerview_0',['PlayerView',['../classPlayerView.html',1,'']]]
 ];
