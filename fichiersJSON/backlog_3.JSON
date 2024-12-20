@@ -1,0 +1,19 @@
+{
+    "fonctionnalites": [
+        {
+            "nom": "Chat en temps réel",
+            "description": "Permet aux membres de l'équipe de communiquer directement via une messagerie instantanée.",
+            "note": ""
+        },
+        {
+            "nom": "Exportation de données",
+            "description": "Fonctionnalité pour exporter les données du projet sous différents formats.",
+            "note": ""
+        },
+        {
+            "nom": "Recherche avancée",
+            "description": "Offre la possibilité de rechercher des informations spécifiques dans le projet.",
+            "note": ""
+        }
+    ]
+}

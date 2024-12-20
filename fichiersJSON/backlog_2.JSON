@@ -1,0 +1,34 @@
+{
+    "fonctionnalites": [
+        {
+            "nom": "Connexion utilisateur",
+            "description": "Permet aux utilisateurs de se connecter avec un email et un mot de passe.",
+            "note": "8"
+        },
+        {
+            "nom": "Création de projet",
+            "description": "L'utilisateur peut créer un projet et y associer des équipes.",
+            "note": "13"
+        },
+        {
+            "nom": "Ajout de tâches",
+            "description": "Les membres de l'équipe peuvent ajouter des tâches à un projet.",
+            "note": "20"
+        },
+        {
+            "nom": "Estimation des tâches",
+            "description": "Permet de voter sur l'effort nécessaire pour chaque tâche en utilisant le planning poker.",
+            "note": "13"
+        },
+        {
+            "nom": "Tableau des tâches",
+            "description": "Affiche un tableau Kanban des tâches avec leur statut (à faire, en cours, terminé).",
+            "note": "40"
+        },
+        {
+            "nom": "Notifications",
+            "description": "Envoie des notifications pour les événements importants (comme la fin d'un vote).",
+            "note": "13"
+        }
+    ]
+}

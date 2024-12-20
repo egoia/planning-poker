@@ -1,0 +1,29 @@
+{
+    "fonctionnalites": [
+        {
+            "nom": "Collection de cartes",
+            "description": "Permet aux joueurs de collectionner et de gérer leurs cartes de héros et de méchants Marvel.",
+            "note": ""
+        },
+        {
+            "nom": "Système de matchmaking",
+            "description": "Associe les joueurs avec des adversaires ayant un niveau de compétence similaire pour des parties équilibrées.",
+            "note": "85"
+        },
+        {
+            "nom": "Défis quotidiens",
+            "description": "Propose des objectifs journaliers qui récompensent les joueurs avec des crédits ou des cartes rares.",
+            "note": ""
+        },
+        {
+            "nom": "Mode compétitif",
+            "description": "Un mode classé où les joueurs peuvent grimper dans les ligues en remportant des parties.",
+            "note": ""
+        },
+        {
+            "nom": "Personnalisation des decks",
+            "description": "Permet aux joueurs de créer et de modifier leurs decks avec différentes cartes pour s'adapter à leur style de jeu.",
+            "note": ""
+        }
+    ]
+}
