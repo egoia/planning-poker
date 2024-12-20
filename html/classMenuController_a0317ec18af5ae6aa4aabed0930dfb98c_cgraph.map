@@ -1,0 +1,5 @@
+<map id="MenuController.onStart" name="MenuController.onStart">
+<area shape="rect" id="Node000001" title="Méthode appelée lorsqu&#39;on appuie sur le bouton start." alt="" coords="5,5,177,31"/>
+<area shape="rect" id="Node000002" href="$classMenuController.html#a86fd23e7fb64993df8166a210bd99999" title="Méthode permettant de vérifier la validité des paramètres." alt="" coords="225,5,463,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>

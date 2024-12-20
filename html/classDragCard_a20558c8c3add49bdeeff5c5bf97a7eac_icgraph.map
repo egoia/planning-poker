@@ -1,0 +1,11 @@
+<map id="DragCard.MoveCoroutine" name="DragCard.MoveCoroutine">
+<area shape="rect" id="Node000001" title="Fonction qui déplace la carte." alt="" coords="495,67,681,93"/>
+<area shape="rect" id="Node000002" href="$classDragCard.html#a3d25f42efb0ad8be8026909cc7e1b070" title="Remet la carte dans la position de la main du joueur." alt="" coords="275,42,447,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="481,71,447,67,447,62,482,65"/>
+<area shape="rect" id="Node000005" href="$classDragCard.html#ac418850d70c903822f01ed60087975c0" title="Fonction d&#39;évènement." alt="" coords="281,91,441,117"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="481,94,441,98,441,93,481,89"/>
+<area shape="rect" id="Node000003" href="$classGameController.html#a947759a1149a4ee02cd068eb0bf66cc1" title="Retour du canva de résultat." alt="" coords="5,5,227,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,45,226,41,227,36,261,40"/>
+<area shape="rect" id="Node000004" href="$classGameController.html#ab593e93f17073e2892f39d99afaaa567" title="Valide une carte." alt="" coords="9,70,223,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="261,69,224,73,223,68,261,63"/>
+</map>

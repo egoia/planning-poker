@@ -1,8 +1,8 @@
 <map id="CardSlot" name="CardSlot">
-<area shape="rect" id="Node000001" title=" " alt="" coords="23,583,192,708"/>
+<area shape="rect" id="Node000001" title="Permet d&#39;encrer les cartes à l&#39;intérieur du cadre (slot)" alt="" coords="23,583,192,708"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,121,71"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,84,106,582,100,583,64,85"/>
-<area shape="rect" id="Node000003" href="$classDragCard.html" title=" " alt="" coords="300,120,480,505"/>
+<area shape="rect" id="Node000003" href="$classDragCard.html" title="Permet de gérer les mouvements d&#39;une carte." alt="" coords="300,120,480,505"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="114,78,301,234,298,238,110,82"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="302,421,173,572,169,568,298,418"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="146,5,295,71"/>

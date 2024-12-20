@@ -1,0 +1,5 @@
+<map id="MenuController.AddName" name="MenuController.AddName">
+<area shape="rect" id="Node000001" title="Ajout visuel d&#39;un joueur sur l&#39;interface." alt="" coords="269,5,459,31"/>
+<area shape="rect" id="Node000002" href="$classMenuController.html#a7d8f76bd5c5c45744e89791746d2c975" title="Méthode appelée lors de l&#39;ajout d&#39;un joueur." alt="" coords="5,5,221,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,21,222,21,222,15,256,15"/>
+</map>

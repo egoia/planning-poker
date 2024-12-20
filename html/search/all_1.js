@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['cafe_0',['cafe',['../classPlanningPoker_1_1Card.html#aad7bc39e9f10739377e1d7044c7a9bce',1,'PlanningPoker::Card']]],
-  ['cafecontroller_1',['CafeController',['../classCafeController.html',1,'']]],
-  ['canvassampleopenfilejson_2',['CanvasSampleOpenFileJson',['../classCanvasSampleOpenFileJson.html',1,'']]],
-  ['card_3',['card',['../classCard.html',1,'Card'],['../classPlanningPoker_1_1Card.html',1,'PlanningPoker.Card']]],
-  ['cardslot_4',['CardSlot',['../classCardSlot.html',1,'']]],
-  ['cent_5',['cent',['../classPlanningPoker_1_1Card.html#af53fd4f3897aff1617465ee3159793c9',1,'PlanningPoker::Card']]],
-  ['chrono_6',['Chrono',['../classChrono.html',1,'']]],
-  ['cinq_7',['cinq',['../classPlanningPoker_1_1Card.html#a15eda93793c7ab8a7d8a9299583d571f',1,'PlanningPoker::Card']]]
+  ['backfromcafe_0',['backFromCafe',['../classGameController.html#ae94e7ff1d9c2171016d8ade233435666',1,'GameController']]],
+  ['backfromedebate_1',['backFromeDebate',['../classGameController.html#ac7ba01ef7ed44e0af80a520ac5e80433',1,'GameController']]],
+  ['backtohandspeed_2',['backToHandSpeed',['../classDragCard.html#ac6e38a4a395b019fedf15dba6c12a873',1,'DragCard']]],
+  ['backtonormalcanva_3',['backToNormalCanva',['../classGameController.html#a947759a1149a4ee02cd068eb0bf66cc1',1,'GameController']]]
 ];

@@ -1,5 +1,5 @@
 <map id="DragCard" name="DragCard">
-<area shape="rect" id="Node000001" title=" " alt="" coords="372,119,552,504"/>
+<area shape="rect" id="Node000001" title="Permet de gérer les mouvements d&#39;une carte." alt="" coords="372,119,552,504"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,121,71"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,76,373,247,370,251,120,81"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="146,5,295,71"/>

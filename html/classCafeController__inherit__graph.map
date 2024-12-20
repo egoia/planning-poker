@@ -1,5 +1,5 @@
 <map id="CafeController" name="CafeController">
-<area shape="rect" id="Node000001" title=" " alt="" coords="9,119,117,184"/>
+<area shape="rect" id="Node000001" title="Permet d&#39;attendre le retour du joueur après une pause café" alt="" coords="9,119,117,184"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,121,71"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,84,66,119,61,119,61,84"/>
 </map>

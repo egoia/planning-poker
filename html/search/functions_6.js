@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['toint_0',['toInt',['../classPlanningPoker_1_1Card.html#a3b390b079c877cc4d060c697e242e995',1,'PlanningPoker::Card']]],
-  ['tostring_1',['toString',['../classPlanningPoker_1_1Card.html#aeee0070542af3ad678dd43e6b4e1ff0d',1,'PlanningPoker::Card']]]
+  ['majfonctionnalite_0',['majFonctionnalite',['../classGameController.html#ad85fdfb6214281bd022804dce6b6c6ee',1,'GameController']]],
+  ['movecoroutine_1',['MoveCoroutine',['../classDragCard.html#a20558c8c3add49bdeeff5c5bf97a7eac',1,'DragCard']]],
+  ['movetohand_2',['moveToHand',['../classDragCard.html#a3d25f42efb0ad8be8026909cc7e1b070',1,'DragCard']]]
 ];

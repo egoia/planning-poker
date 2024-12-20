@@ -1,0 +1,5 @@
+<map id="PlanningPoker.Card.numberToCard" name="PlanningPoker.Card.numberToCard">
+<area shape="rect" id="Node000001" title="Associe une valeur numérique à la carte correspondante dans le pool." alt="" coords="268,5,469,45"/>
+<area shape="rect" id="Node000002" href="$classGameController.html#ab593e93f17073e2892f39d99afaaa567" title="Valide une carte." alt="" coords="5,13,220,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,28,220,28,220,23,254,23"/>
+</map>

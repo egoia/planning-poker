@@ -1,0 +1,7 @@
+<map id="MenuController.onAjoutJoueur" name="MenuController.onAjoutJoueur">
+<area shape="rect" id="Node000001" title="Méthode appelée lors de l&#39;ajout d&#39;un joueur." alt="" coords="5,31,221,56"/>
+<area shape="rect" id="Node000002" href="$classMenuController.html#aba40f312bf157e46ecda141020d9a70f" title="Ajout visuel d&#39;un joueur sur l&#39;interface." alt="" coords="281,5,471,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,30,268,26,268,31,222,36"/>
+<area shape="rect" id="Node000003" href="$classMenuController.html#a38193a9d6b14d912d864a27eb4b5ff4e" title="Méthode vérifiant l&#39;existance d&#39;un joueur dans la liste." alt="" coords="269,55,483,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,51,256,54,255,59,221,56"/>
+</map>

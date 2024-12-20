@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['joker_0',['joker',['../classPlanningPoker_1_1Card.html#a8e051e982c1bf86291b7cc5b0c5683de',1,'PlanningPoker::Card']]],
-  ['joue_5ftour_1',['joue_tour',['../classPlanningPoker_1_1AppManager.html#a76c7ce6b4ba188841c42aa465c264368',1,'PlanningPoker::AppManager']]],
-  ['joueur_2',['Joueur',['../classJoueur.html',1,'']]]
+  ['hand_0',['hand',['../classCardSlot.html#acab7be6025b5a75a7a4eb92c55b094a2',1,'CardSlot']]],
+  ['handpos_1',['handpos',['../classCardSlot.html#a739557864662ccb4f4f7d14322ed63ca',1,'CardSlot.handPos'],['../classDragCard.html#aca2746abec4337e3937483fab96ed2c3',1,'DragCard.handPos']]],
+  ['huit_2',['huit',['../classPlanningPoker_1_1Card.html#a51b6435743b23d21a118c03978102b6a',1,'PlanningPoker::Card']]]
 ];

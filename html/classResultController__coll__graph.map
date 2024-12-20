@@ -1,5 +1,5 @@
 <map id="ResultController" name="ResultController">
-<area shape="rect" id="Node000001" title=" " alt="" coords="156,253,275,399"/>
+<area shape="rect" id="Node000001" title="Permet de gérer l&#39;affichage du résultat d&#39;un vote." alt="" coords="156,253,275,399"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,65,121,131"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,141,169,252,165,255,90,144"/>
 <area shape="rect" id="Node000003" href="$classPlanningPoker_1_1Card.html" title=" " alt="" coords="146,35,285,161"/>

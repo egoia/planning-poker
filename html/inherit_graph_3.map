@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" title=" " alt="" coords="13,55,158,80"/>
-<area shape="rect" id="Node000001" href="$classDragCard.html" title=" " alt="" coords="273,128,356,153"/>
+<area shape="rect" id="Node000001" href="$classDragCard.html" title="Permet de gérer les mouvements d&#39;une carte." alt="" coords="273,128,356,153"/>
 <area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="143,82,166,89,277,125,275,130,165,94,141,87"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="31,104,139,129"/>
 <area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="153,121,274,134,273,139,153,126"/>
@@ -16,20 +16,20 @@
 <area shape="rect" id="Node000006" title=" " alt="" coords="23,400,147,425"/>
 <area shape="poly" id="edge12_Node000006_Node000001" title=" " alt="" coords="100,386,211,212,251,177,290,151,293,156,255,181,215,216,105,389"/>
 <area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="98,386,143,323,175,289,212,261,236,250,239,254,215,266,179,293,147,327,103,390"/>
-<area shape="rect" id="Node000007" href="$classCafeController.html" title=" " alt="" coords="257,572,373,597"/>
+<area shape="rect" id="Node000007" href="$classCafeController.html" title="Permet d&#39;attendre le retour du joueur après une pause café" alt="" coords="257,572,373,597"/>
 <area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="103,436,148,498,179,531,215,558,235,568,257,575,256,580,233,573,212,563,175,535,144,502,99,439"/>
-<area shape="rect" id="Node000010" href="$classCardSlot.html" title=" " alt="" coords="276,621,353,647"/>
+<area shape="rect" id="Node000010" href="$classCardSlot.html" title="Permet d&#39;encrer les cartes à l&#39;intérieur du cadre (slot)" alt="" coords="276,621,353,647"/>
 <area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="98,437,115,476,140,522,173,569,215,608,245,622,276,629,275,634,243,627,212,612,169,572,135,525,110,478,93,439"/>
-<area shape="rect" id="Node000011" href="$classChrono.html" title=" " alt="" coords="281,276,349,301"/>
+<area shape="rect" id="Node000011" href="$classChrono.html" title="Elle permet la gestion du chronomètre lors du débat." alt="" coords="281,276,349,301"/>
 <area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="107,388,153,348,182,328,212,310,247,298,280,290,281,295,248,303,214,315,185,332,156,352,111,392"/>
-<area shape="rect" id="Node000012" href="$classDebateController.html" title=" " alt="" coords="248,325,381,351"/>
+<area shape="rect" id="Node000012" href="$classDebateController.html" title="Permet de gérer l&#39;affichage lors du débat." alt="" coords="248,325,381,351"/>
 <area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="128,392,213,361,257,348,259,353,214,366,130,397"/>
-<area shape="rect" id="Node000013" href="$classGameController.html" title=" " alt="" coords="252,375,377,400"/>
+<area shape="rect" id="Node000013" href="$classGameController.html" title="Permet de gérer le fonctionnement du jeu en reliant le modèle aux différentes vues." alt="" coords="252,375,377,400"/>
 <area shape="poly" id="edge13_Node000006_Node000013" title=" " alt="" coords="161,402,251,392,252,397,161,407"/>
-<area shape="rect" id="Node000014" href="$classMenuController.html" title=" " alt="" coords="253,424,376,449"/>
+<area shape="rect" id="Node000014" href="$classMenuController.html" title="Gère l&#39;affichage du menu et la transmission des paramètres du jeu." alt="" coords="253,424,376,449"/>
 <area shape="poly" id="edge14_Node000006_Node000014" title=" " alt="" coords="161,418,253,428,253,433,161,423"/>
-<area shape="rect" id="Node000015" href="$classPlayerView.html" title=" " alt="" coords="267,473,362,499"/>
+<area shape="rect" id="Node000015" href="$classPlayerView.html" title="Gère l&#39;affichage du nom d&#39;un joueur." alt="" coords="267,473,362,499"/>
 <area shape="poly" id="edge15_Node000006_Node000015" title=" " alt="" coords="129,428,214,459,268,474,266,479,213,465,127,433"/>
-<area shape="rect" id="Node000016" href="$classResultController.html" title=" " alt="" coords="251,523,378,548"/>
+<area shape="rect" id="Node000016" href="$classResultController.html" title="Permet de gérer l&#39;affichage du résultat d&#39;un vote." alt="" coords="251,523,378,548"/>
 <area shape="poly" id="edge16_Node000006_Node000016" title=" " alt="" coords="111,433,156,472,215,509,252,522,250,527,212,514,153,476,107,437"/>
 </map>

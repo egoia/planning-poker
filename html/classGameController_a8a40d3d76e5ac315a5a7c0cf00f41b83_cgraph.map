@@ -1,0 +1,12 @@
+<map id="GameController.OnEnable" name="GameController.OnEnable">
+<area shape="rect" id="Node000001" title="Initialise les variables lors de l&#39;activation." alt="" coords="5,45,196,70"/>
+<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1AppManager.html#aab28663b8514785b9dc38b845d47c62c" title="Obtient la fonctionnalité actuellement en cours d&#39;estimation." alt="" coords="559,5,781,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,49,544,30,544,35,196,55"/>
+<area shape="rect" id="Node000003" href="$classGameController.html#ad85fdfb6214281bd022804dce6b6c6ee" title="Mise à jour visuelle de la fonctionnalité traitée." alt="" coords="244,70,489,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,64,230,67,230,72,196,69"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="434,67,550,45,551,50,435,73"/>
+<area shape="rect" id="Node000004" href="$classPlanningPoker_1_1Fonctionnalite.html#ae7c520d6348f40ac85679a803034ac16" title="Getter pour la description de la fonctionnalité" alt="" coords="553,69,787,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="489,83,539,84,539,89,489,88"/>
+<area shape="rect" id="Node000005" href="$classPlanningPoker_1_1Fonctionnalite.html#a841cf84389a63c7e19fdc114711a75d8" title="Getter pour le nom de la fonctionnalité" alt="" coords="537,134,803,159"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="422,93,538,119,588,129,587,134,537,124,421,98"/>
+</map>

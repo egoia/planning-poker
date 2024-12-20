@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['cafe_0',['cafe',['../classPlanningPoker_1_1Card.html#aad7bc39e9f10739377e1d7044c7a9bce',1,'PlanningPoker::Card']]],
-  ['cent_1',['cent',['../classPlanningPoker_1_1Card.html#af53fd4f3897aff1617465ee3159793c9',1,'PlanningPoker::Card']]],
-  ['cinq_2',['cinq',['../classPlanningPoker_1_1Card.html#a15eda93793c7ab8a7d8a9299583d571f',1,'PlanningPoker::Card']]]
+  ['ajoutjoueur_0',['ajoutJoueur',['../classMenuController.html#a909aae140176ae7ea11cf9974f0eaf23',1,'MenuController']]]
 ];

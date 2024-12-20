@@ -1,5 +1,5 @@
 <map id="DebateController" name="DebateController">
-<area shape="rect" id="Node000001" title=" " alt="" coords="183,268,309,473"/>
+<area shape="rect" id="Node000001" title="Permet de gérer l&#39;affichage lors du débat." alt="" coords="183,268,309,473"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,65,121,131"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,140,185,275,181,278,90,143"/>
 <area shape="rect" id="Node000003" href="$classPlanningPoker_1_1Fonctionnalite.html" title=" " alt="" coords="145,5,347,191"/>

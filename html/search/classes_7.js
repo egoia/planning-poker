@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['playerview_0',['PlayerView',['../classPlayerView.html',1,'']]]
+  ['openjsonfile_0',['OpenJSONFile',['../classOpenJSONFile.html',1,'']]]
 ];

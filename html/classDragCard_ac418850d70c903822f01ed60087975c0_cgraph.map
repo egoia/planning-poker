@@ -1,0 +1,7 @@
+<map id="DragCard.OnEndDrag" name="DragCard.OnEndDrag">
+<area shape="rect" id="Node000001" title="Fonction d&#39;évènement." alt="" coords="5,31,165,56"/>
+<area shape="rect" id="Node000002" href="$classDragCard.html#a20558c8c3add49bdeeff5c5bf97a7eac" title="Fonction qui déplace la carte." alt="" coords="234,5,421,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,32,220,27,221,32,166,38"/>
+<area shape="rect" id="Node000003" href="$classDragCard.html#a8e34f62365b4726612d8e7b6c4d4b36e" title="Fonction qui agrandit ou rétrécit la carte." alt="" coords="213,55,441,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,49,200,52,199,57,165,54"/>
+</map>

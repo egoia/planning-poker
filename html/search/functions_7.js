@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validate_0',['Validate',['../classPlanningPoker_1_1Validator.html#ae784c11e68040194319cc554fe1db881',1,'PlanningPoker::Validator']]]
+  ['numbertocard_0',['numberToCard',['../classPlanningPoker_1_1Card.html#a86a7c14ee1100656d27d5ee691f78bf3',1,'PlanningPoker::Card']]]
 ];

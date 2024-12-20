@@ -1,0 +1,9 @@
+<map id="DragCard.ResizePanelCoroutine" name="DragCard.ResizePanelCoroutine">
+<area shape="rect" id="Node000001" title="Fonction qui agrandit ou rétrécit la carte." alt="" coords="239,55,467,80"/>
+<area shape="rect" id="Node000002" href="$classDragCard.html#ac418850d70c903822f01ed60087975c0" title="Fonction d&#39;évènement." alt="" coords="18,5,178,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,55,164,33,165,28,273,49"/>
+<area shape="rect" id="Node000003" href="$classDragCard.html#a6ee79588ba8e6625e53c62fdcb0d74b1" title="Fonction d&#39;évènement souris." alt="" coords="5,55,191,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,70,191,70,191,65,225,65"/>
+<area shape="rect" id="Node000004" href="$classDragCard.html#a27fbec6919b89e2c473a9c906ac97c9c" title="Fonction d&#39;évènement souris." alt="" coords="10,104,186,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="273,85,165,107,164,101,272,80"/>
+</map>

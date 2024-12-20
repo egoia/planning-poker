@@ -1,0 +1,22 @@
+<map id="GameController.onValideCard" name="GameController.onValideCard">
+<area shape="rect" id="Node000001" title="Valide une carte." alt="" coords="5,149,220,174"/>
+<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1AppManager.html#aab28663b8514785b9dc38b845d47c62c" title="Obtient la fonctionnalité actuellement en cours d&#39;estimation." alt="" coords="288,5,511,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,146,186,102,225,77,267,55,286,47,288,52,269,60,228,81,189,106,131,151"/>
+<area shape="rect" id="Node000003" href="$classPlanningPoker_1_1AppManager.html#a76c7ce6b4ba188841c42aa465c264368" title="Joue un tour en évaluant les cartes soumises par les joueurs." alt="" coords="268,70,531,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,146,201,125,267,104,304,95,305,101,269,109,203,130,146,151"/>
+<area shape="rect" id="Node000006" href="$classDragCard.html#a3d25f42efb0ad8be8026909cc7e1b070" title="Remet la carte dans la position de la main du joueur." alt="" coords="313,119,485,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="220,148,299,140,300,145,220,153"/>
+<area shape="rect" id="Node000008" href="$classPlanningPoker_1_1Card.html#a86a7c14ee1100656d27d5ee691f78bf3" title="Associe une valeur numérique à la carte correspondante dans le pool." alt="" coords="299,169,500,209"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="220,169,285,176,284,181,220,174"/>
+<area shape="rect" id="Node000009" href="$classPlanningPoker_1_1Card.html#a3b390b079c877cc4d060c697e242e995" title="Convertit la carte en une valeur int." alt="" coords="620,205,801,230"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="139,172,197,197,269,219,357,230,446,234,531,232,606,227,606,232,532,237,446,239,356,235,267,224,195,202,137,176"/>
+<area shape="rect" id="Node000010" href="$classPlanningPoker_1_1AppManager.html#a62d7eb5142c74fe16166363f0cce4f16" title="Sauvegarde les données actuelles des fonctionnalités dans le fichier JSON." alt="" coords="283,285,516,310"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="131,172,189,217,228,241,269,263,315,279,313,284,267,268,225,246,186,221,127,176"/>
+<area shape="rect" id="Node000004" href="$classPlanningPoker_1_1Fonctionnalite.html#a0b78c8149b561becfe77922b3924c1ce" title="Setter pour la note associée à la fonctionnalité" alt="" coords="579,70,843,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="531,80,565,80,565,85,531,85"/>
+<area shape="rect" id="Node000005" href="$classPlanningPoker_1_1Card.html#aeee0070542af3ad678dd43e6b4e1ff0d" title="Retourne la représentation textuelle de la carte." alt="" coords="891,70,1093,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="843,80,877,80,877,85,843,85"/>
+<area shape="rect" id="Node000007" href="$classDragCard.html#a20558c8c3add49bdeeff5c5bf97a7eac" title="Fonction qui déplace la carte." alt="" coords="617,119,804,145"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="485,129,604,129,604,135,485,135"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="500,196,606,205,606,211,500,201"/>
+</map>

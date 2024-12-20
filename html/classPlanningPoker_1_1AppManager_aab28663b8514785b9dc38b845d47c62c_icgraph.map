@@ -1,0 +1,13 @@
+<map id="PlanningPoker.AppManager.getCurrent" name="PlanningPoker.AppManager.getCurrent">
+<area shape="rect" id="Node000001" title="Obtient la fonctionnalité actuellement en cours d&#39;estimation." alt="" coords="568,69,791,109"/>
+<area shape="rect" id="Node000002" href="$classGameController.html#a947759a1149a4ee02cd068eb0bf66cc1" title="Retour du canva de résultat." alt="" coords="5,5,227,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="614,67,568,53,520,41,444,31,367,26,227,23,227,18,367,20,444,26,520,36,570,47,616,62"/>
+<area shape="rect" id="Node000003" href="$classGameController.html#ad85fdfb6214281bd022804dce6b6c6ee" title="Mise à jour visuelle de la fonctionnalité traitée." alt="" coords="275,51,520,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="554,81,520,78,520,72,554,75"/>
+<area shape="rect" id="Node000004" href="$classGameController.html#a8a40d3d76e5ac315a5a7c0cf00f41b83" title="Initialise les variables lors de l&#39;activation." alt="" coords="21,81,211,106"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="554,93,211,95,211,90,554,88"/>
+<area shape="rect" id="Node000005" href="$classGameController.html#ab593e93f17073e2892f39d99afaaa567" title="Valide une carte." alt="" coords="290,153,505,178"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="595,116,521,136,448,155,447,150,519,131,593,110"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="290,52,227,43,227,38,291,47"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="262,81,212,86,211,81,262,75"/>
+</map>

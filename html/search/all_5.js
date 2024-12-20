@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['huit_0',['huit',['../classPlanningPoker_1_1Card.html#a51b6435743b23d21a118c03978102b6a',1,'PlanningPoker::Card']]]
+  ['gamecontroller_0',['GameController',['../classGameController.html',1,'']]],
+  ['getcurrent_1',['getCurrent',['../classPlanningPoker_1_1AppManager.html#aab28663b8514785b9dc38b845d47c62c',1,'PlanningPoker::AppManager']]],
+  ['getdescription_2',['getDescription',['../classPlanningPoker_1_1Fonctionnalite.html#ae7c520d6348f40ac85679a803034ac16',1,'PlanningPoker::Fonctionnalite']]],
+  ['getnom_3',['getNom',['../classPlanningPoker_1_1Fonctionnalite.html#a841cf84389a63c7e19fdc114711a75d8',1,'PlanningPoker::Fonctionnalite']]],
+  ['getnote_4',['getNote',['../classPlanningPoker_1_1Fonctionnalite.html#ad688c9650bfa2642f032b2d8466c9415',1,'PlanningPoker::Fonctionnalite']]]
 ];

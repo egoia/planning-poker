@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['majorite_5fabsolue_0',['majorite_absolue',['../classPlanningPoker_1_1Validator.html#a6f532cfc575351413b464380f290f5dc',1,'PlanningPoker::Validator']]],
-  ['majorite_5frelative_1',['majorite_relative',['../classPlanningPoker_1_1Validator.html#acc08d77adbac1ad15a9d1a2450848420',1,'PlanningPoker::Validator']]],
-  ['mediane_2',['mediane',['../classPlanningPoker_1_1Validator.html#ae169f48402c6270d65f8630da6733e8f',1,'PlanningPoker::Validator']]],
-  ['moyenne_3',['moyenne',['../classPlanningPoker_1_1Validator.html#a6622d5a1cead940008daa4ebacb09b6d',1,'PlanningPoker::Validator']]]
+  ['file_0',['file',['../classMenuController.html#a00b6aef420afdb7262bba9f339e1823f',1,'MenuController']]],
+  ['fonc_1',['fonc',['../classDebateController.html#a648a21ed2ee866fbd45e75b9d78c1702',1,'DebateController.fonc'],['../classResultController.html#a786403a2942f90d71a8c3c777de4a154',1,'ResultController.fonc']]]
 ];
