@@ -13,7 +13,8 @@ public class MenuController : MonoBehaviour
     public List<Joueur> joueurs = new List<Joueur>();
     public TMP_Dropdown mode;
     public Button start;
-
+    public Transform contentNoms;
+    public GameObject namePrefab; 
 
     public void onStart()
     {
@@ -41,6 +42,7 @@ public class MenuController : MonoBehaviour
             &&!alreadyExists(ajoutJoueur.text.Trim()) ){
             joueurs.Add(new Joueur(ajoutJoueur.text));
             Debug.Log(ajoutJoueur.text.Trim());
+            AddName(ajoutJoueur.text.Trim());
             ajoutJoueur.text=string.Empty;
             ajoutJoueur.ForceLabelUpdate();
             Image backgroundImage = ajoutJoueur.GetComponentInChildren<Image>();
@@ -67,6 +69,23 @@ public class MenuController : MonoBehaviour
         #else
         Application.Quit(); 
         #endif
+    }
+
+     public void AddName(string name)
+    {
+        Debug.Log("Ajout du nom : " + name);
+        // Instancier un nouvel élément de la liste
+        GameObject newNameItem = Instantiate(namePrefab, contentNoms);
+
+        // Modifier le texte de l'élément
+        TMP_Text nameText = newNameItem.GetComponentInChildren<TMP_Text>();
+        if (nameText != null)
+        {
+            nameText.text = name;
+        }
+        else {
+            Debug.LogError("Le prefab ne contient pas de TMP_Text.");
+        }
     }
 
 }

@@ -89,10 +89,10 @@ public class GameController : MonoBehaviour
                     //min
                     if(cards[i].toInt()<min.toInt()){
                         min = cards[i];
-                        joueursMin = joueurs[i].name+" ";
+                        joueursMin = joueurs[i].name;
                     }
                     else if(cards[i].toInt()==min.toInt()){
-                        joueursMin += joueurs[i].name+" ";
+                        joueursMin += ", "+joueurs[i].name;
                     }
                     //max
                     if(cards[i].toInt()>max.toInt()){
@@ -100,7 +100,7 @@ public class GameController : MonoBehaviour
                         joueursMax = joueurs[i].name+" ";
                     }
                     else if(cards[i].toInt()==max.toInt()){
-                        joueursMax += joueurs[i].name+" ";
+                        joueursMax += ", "+joueurs[i].name;
                     }
 
                 }
