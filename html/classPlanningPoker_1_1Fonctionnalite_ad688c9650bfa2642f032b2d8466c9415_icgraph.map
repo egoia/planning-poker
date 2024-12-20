@@ -1,5 +1,9 @@
 <map id="PlanningPoker.Fonctionnalite.getNote" name="PlanningPoker.Fonctionnalite.getNote">
-<area shape="rect" id="Node000001" title="Getter pour la note associée à la fonctionnalité" alt="" coords="256,13,521,38"/>
-<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1AppManager.html#aa41ff4c5604eb95046e0911c9b648535" title="Constructeur de la classe AppManager." alt="" coords="5,5,208,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,28,208,28,208,23,242,23"/>
+<area shape="rect" id="Node000001" title="Getter pour la note associée à la fonctionnalité" alt="" coords="275,77,540,102"/>
+<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1AppManager.html#aa41ff4c5604eb95046e0911c9b648535" title="Constructeur de la classe AppManager." alt="" coords="15,5,217,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="335,76,207,48,208,43,336,71"/>
+<area shape="rect" id="Node000003" href="$classGameController.html#a947759a1149a4ee02cd068eb0bf66cc1" title="Retour du canva de résultat." alt="" coords="5,69,227,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,92,227,92,227,87,261,87"/>
+<area shape="rect" id="Node000004" href="$classGameController.html#a8a40d3d76e5ac315a5a7c0cf00f41b83" title="Initialise les variables lors de l&#39;activation." alt="" coords="21,134,211,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="329,107,182,137,181,131,328,102"/>
 </map>

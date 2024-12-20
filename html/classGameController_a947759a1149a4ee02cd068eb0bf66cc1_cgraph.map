@@ -1,16 +1,19 @@
 <map id="GameController.backToNormalCanva" name="GameController.backToNormalCanva">
-<area shape="rect" id="Node000001" title="Retour du canva de résultat." alt="" coords="5,69,227,109"/>
-<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1AppManager.html#aab28663b8514785b9dc38b845d47c62c" title="Obtient la fonctionnalité actuellement en cours d&#39;estimation." alt="" coords="589,5,812,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,68,274,61,431,44,576,32,576,37,432,50,275,67,227,73"/>
-<area shape="rect" id="Node000003" href="$classGameController.html#ad85fdfb6214281bd022804dce6b6c6ee" title="Mise à jour visuelle de la fonctionnalité traitée." alt="" coords="275,77,520,102"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,87,261,87,261,92,227,92"/>
-<area shape="rect" id="Node000006" href="$classDragCard.html#a3d25f42efb0ad8be8026909cc7e1b070" title="Remet la carte dans la position de la main du joueur." alt="" coords="311,154,483,179"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="190,107,337,148,336,153,189,112"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="458,74,592,46,593,51,459,79"/>
-<area shape="rect" id="Node000004" href="$classPlanningPoker_1_1Fonctionnalite.html#ae7c520d6348f40ac85679a803034ac16" title="Getter pour la description de la fonctionnalité" alt="" coords="583,69,818,109"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="520,87,570,87,570,92,520,92"/>
-<area shape="rect" id="Node000005" href="$classPlanningPoker_1_1Fonctionnalite.html#a841cf84389a63c7e19fdc114711a75d8" title="Getter pour le nom de la fonctionnalité" alt="" coords="568,134,833,159"/>
-<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="466,99,620,129,619,134,465,105"/>
-<area shape="rect" id="Node000007" href="$classDragCard.html#a20558c8c3add49bdeeff5c5bf97a7eac" title="Fonction qui déplace la carte." alt="" coords="607,183,794,209"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="484,172,594,183,593,188,483,178"/>
+<area shape="rect" id="Node000001" title="Retour du canva de résultat." alt="" coords="5,105,227,145"/>
+<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1AppManager.html#aab28663b8514785b9dc38b845d47c62c" title="Obtient la fonctionnalité actuellement en cours d&#39;estimation." alt="" coords="609,5,832,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,103,206,73,274,48,356,32,441,22,522,18,596,17,596,22,522,23,441,27,357,37,275,53,208,78,152,107"/>
+<area shape="rect" id="Node000003" href="$classPlanningPoker_1_1Fonctionnalite.html#a841cf84389a63c7e19fdc114711a75d8" title="Getter pour le nom de la fonctionnalité" alt="" coords="588,149,853,174"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,141,275,147,429,156,574,159,574,165,429,161,274,152,226,146"/>
+<area shape="rect" id="Node000004" href="$classPlanningPoker_1_1Fonctionnalite.html#ad688c9650bfa2642f032b2d8466c9415" title="Getter pour la note associée à la fonctionnalité" alt="" coords="275,113,540,138"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,123,261,123,261,128,227,128"/>
+<area shape="rect" id="Node000005" href="$classGameController.html#ad85fdfb6214281bd022804dce6b6c6ee" title="Mise à jour visuelle de la fonctionnalité traitée." alt="" coords="285,63,530,89"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="226,104,318,88,319,94,227,109"/>
+<area shape="rect" id="Node000007" href="$classDragCard.html#a3d25f42efb0ad8be8026909cc7e1b070" title="Remet la carte dans la position de la main du joueur." alt="" coords="321,214,493,239"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="159,143,214,168,276,192,331,208,330,213,274,197,212,173,157,148"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="486,61,595,43,596,48,487,66"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="496,86,541,97,565,108,589,119,661,142,659,147,587,124,563,113,539,103,494,91"/>
+<area shape="rect" id="Node000006" href="$classPlanningPoker_1_1Fonctionnalite.html#ae7c520d6348f40ac85679a803034ac16" title="Getter pour la description de la fonctionnalité" alt="" coords="603,69,838,109"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="530,79,590,81,589,86,530,84"/>
+<area shape="rect" id="Node000008" href="$classDragCard.html#a20558c8c3add49bdeeff5c5bf97a7eac" title="Fonction qui déplace la carte." alt="" coords="627,214,814,239"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="494,224,613,224,613,229,494,229"/>
 </map>
