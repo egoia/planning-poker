@@ -1,0 +1,10 @@
+<map id="DebateController" name="DebateController">
+<area shape="rect" id="Node000001" title=" " alt="" coords="183,268,309,473"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,65,121,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,140,185,275,181,278,90,143"/>
+<area shape="rect" id="Node000003" href="$classPlanningPoker_1_1Fonctionnalite.html" title=" " alt="" coords="145,5,347,191"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,191,249,252,243,252,243,191"/>
+<area shape="rect" id="Node000004" href="$classPlanningPoker_1_1Card.html" title=" " alt="" coords="371,35,510,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="398,162,320,271,316,268,394,159"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="511,72,529,81,537,98,534,109,527,117,523,114,529,107,531,98,525,84,509,77"/>
+</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numbertocard_24',['numberToCard',['../classPlanningPoker_1_1Card.html#a86a7c14ee1100656d27d5ee691f78bf3',1,'PlanningPoker::Card']]]
+  ['numbertocard_0',['numberToCard',['../classPlanningPoker_1_1Card.html#a86a7c14ee1100656d27d5ee691f78bf3',1,'PlanningPoker::Card']]]
 ];

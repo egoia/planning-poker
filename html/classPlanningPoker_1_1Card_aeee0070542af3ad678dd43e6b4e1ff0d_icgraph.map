@@ -1,5 +1,7 @@
 <map id="PlanningPoker.Card.toString" name="PlanningPoker.Card.toString">
-<area shape="rect" id="node1" title="Retourne la représentation textuelle de la carte." alt="" coords="628,5,831,32"/>
-<area shape="rect" id="node2" href="$classPlanningPoker_1_1Fonctionnalite.html#a0b78c8149b561becfe77922b3924c1ce" title="Setter pour la note associée à la fonctionnalité" alt="" coords="316,5,580,32"/>
-<area shape="rect" id="node3" href="$classPlanningPoker_1_1AppManager.html#aa299de8d154c12b8e524d42dca2c2fb4" title="Joue un tour en évaluant les cartes soumises par les joueurs." alt="" coords="5,5,268,32"/>
+<area shape="rect" id="Node000001" title="Retourne la représentation textuelle de la carte." alt="" coords="628,5,831,31"/>
+<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1Fonctionnalite.html#a0b78c8149b561becfe77922b3924c1ce" title="Setter pour la note associée à la fonctionnalité" alt="" coords="316,5,580,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="614,21,580,21,580,15,614,15"/>
+<area shape="rect" id="Node000003" href="$classPlanningPoker_1_1AppManager.html#a76c7ce6b4ba188841c42aa465c264368" title="Joue un tour en évaluant les cartes soumises par les joueurs." alt="" coords="5,5,268,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="302,21,268,21,268,15,302,15"/>
 </map>

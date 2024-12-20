@@ -48,4 +48,5 @@ var menudata={children:[
 {text:"v",url:"functions.html#index_v"},
 {text:"z",url:"functions.html#index_z"}]},
 {text:"Functions",url:"functions_func.html"},
-{text:"Variables",url:"functions_vars.html"}]}]}]}
+{text:"Variables",url:"functions_vars.html"},
+{text:"Properties",url:"functions_prop.html"}]}]}]}

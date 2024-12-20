@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dragcard_46',['DragCard',['../classDragCard.html',1,'']]]
+  ['debatecontroller_0',['DebateController',['../classDebateController.html',1,'']]],
+  ['dragcard_1',['DragCard',['../classDragCard.html',1,'']]]
 ];

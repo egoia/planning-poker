@@ -1,4 +1,5 @@
 <map id="PlanningPoker.FonctionnaliteWrapper" name="PlanningPoker.FonctionnaliteWrapper">
-<area shape="rect" id="node1" title=" " alt="" coords="5,233,215,325"/>
-<area shape="rect" id="node2" href="$classPlanningPoker_1_1Fonctionnalite.html" title=" " alt="" coords="5,5,215,171"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,253,207,333"/>
+<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1Fonctionnalite.html" title=" " alt="" coords="5,5,207,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,191,109,237,103,237,103,191"/>
 </map>

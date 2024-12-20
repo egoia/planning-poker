@@ -1,4 +1,5 @@
 <map id="PlanningPoker.Card.toInt" name="PlanningPoker.Card.toInt">
-<area shape="rect" id="node1" title="Convertit la carte en une valeur int." alt="" coords="255,13,436,39"/>
-<area shape="rect" id="node2" href="$classPlanningPoker_1_1Card.html#a86a7c14ee1100656d27d5ee691f78bf3" title="Associe une valeur numérique à la carte correspondante dans le pool." alt="" coords="5,5,207,47"/>
+<area shape="rect" id="Node000001" title="Convertit la carte en une valeur int." alt="" coords="255,13,436,38"/>
+<area shape="rect" id="Node000002" href="$classPlanningPoker_1_1Card.html#a86a7c14ee1100656d27d5ee691f78bf3" title="Associe une valeur numérique à la carte correspondante dans le pool." alt="" coords="5,5,207,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,28,207,28,207,23,241,23"/>
 </map>

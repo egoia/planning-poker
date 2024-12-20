@@ -1,3 +1,33 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classFonctionnalite.html" title="Représente une fonctionnalité à estimer." alt="" coords="5,5,120,32"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="13,55,158,80"/>
+<area shape="rect" id="Node000001" href="$classDragCard.html" title=" " alt="" coords="273,128,356,153"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="143,82,166,89,277,125,275,130,165,94,141,87"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="31,104,139,129"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="153,121,274,134,273,139,153,126"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="19,153,151,179"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="165,155,273,142,274,148,166,160"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,252,165,277"/>
+<area shape="rect" id="Node000008" href="$classCanvasSampleOpenFileJson.html" title=" " alt="" coords="213,227,416,252"/>
+<area shape="poly" id="edge4_Node000009_Node000008" title=" " alt="" coords="179,252,213,248,213,253,180,257"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="7,203,164,228"/>
+<area shape="poly" id="edge5_Node000004_Node000001" title=" " alt="" coords="139,196,165,187,275,151,276,156,166,193,140,201"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="11,5,159,31"/>
+<area shape="poly" id="edge6_Node000005_Node000001" title=" " alt="" coords="150,33,167,40,242,84,299,126,296,130,239,89,164,44,148,38"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="23,375,147,400"/>
+<area shape="poly" id="edge11_Node000006_Node000001" title=" " alt="" coords="104,362,163,287,186,249,195,232,211,212,251,177,290,151,293,156,255,182,215,216,200,235,190,251,168,290,109,365"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="102,362,148,311,178,284,212,261,239,250,241,254,215,266,182,288,152,314,106,365"/>
+<area shape="rect" id="Node000007" href="$classCafeController.html" title=" " alt="" coords="257,572,373,597"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="100,411,118,445,143,485,176,525,215,558,235,569,257,576,256,581,233,574,212,563,172,529,139,488,114,448,96,414"/>
+<area shape="rect" id="Node000010" href="$classCardSlot.html" title=" " alt="" coords="276,276,353,301"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="114,365,159,337,212,310,275,292,277,297,214,315,162,341,117,369"/>
+<area shape="rect" id="Node000011" href="$classDebateController.html" title=" " alt="" coords="248,325,381,351"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="158,369,254,348,255,353,159,374"/>
+<area shape="rect" id="Node000012" href="$classGameController.html" title=" " alt="" coords="252,375,377,400"/>
+<area shape="poly" id="edge12_Node000006_Node000012" title=" " alt="" coords="161,385,252,385,252,390,161,390"/>
+<area shape="rect" id="Node000013" href="$classMenuController.html" title=" " alt="" coords="253,424,376,449"/>
+<area shape="poly" id="edge13_Node000006_Node000013" title=" " alt="" coords="159,400,255,421,254,427,158,406"/>
+<area shape="rect" id="Node000014" href="$classResultController.html" title=" " alt="" coords="251,473,378,499"/>
+<area shape="poly" id="edge14_Node000006_Node000014" title=" " alt="" coords="117,405,162,433,214,460,252,472,250,477,212,464,159,438,114,410"/>
+<area shape="rect" id="Node000015" href="$classmon__testeur.html" title=" " alt="" coords="263,523,367,548"/>
+<area shape="poly" id="edge15_Node000006_Node000015" title=" " alt="" coords="106,409,152,460,182,487,215,509,238,519,263,526,262,531,237,524,212,514,178,491,148,464,102,413"/>
 </map>
