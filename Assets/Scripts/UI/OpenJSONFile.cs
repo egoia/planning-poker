@@ -9,6 +9,10 @@ using SFB;
 using System;
 using TMPro;
 
+/// @class OpenJSONFile
+/// @brief Classe récupérée du plugin :  https://github.com/gkngkc/UnityStandaloneFileBrowser
+///
+/// Prmet la sélection d'un fichier JSON via le sélecteur de fichier natif du système
 [RequireComponent(typeof(Button))]
 public class CanvasSampleOpenFileJson : MonoBehaviour, IPointerDownHandler {
     public String file;

@@ -7,18 +7,43 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
+/// @class GameController
+/// @brief Permet de gérer le fonctionnement du jeu en reliant le modèle aux différentes vues
+///
+/// Cette classe est reponsable de l'affiche des différents canvas et de la communication avec le modèle 
 public class GameController : MonoBehaviour
 {
+     /// @brief Variables d'affichage pour différents textes
     public TMP_Text nom_joueur, titre_func, desc_func, text_tour;
+
+     /// @brief Liste des joueurs
     private List<Joueur> joueurs;
+
+     /// @brief L'id du joueur courant
     private int curr_player_id = 0;
+
+     /// @brief Modèle utilisé
     private AppManager appManager; 
+
+     /// @brief Tableau des cartes jouées pour le tour courant
     private Card[] cards;
+
+     /// @brief Emplacement pour poser la carte choisie
     public CardSlot cardSlot;
+
+     /// @brief Différentes vues en fonction de l'état du jeu 
     public Canvas normalCanva, resultCanva, finCanva, cafeCanva, debateCanva;
+    
+     /// @brief Manager qui gère l'affichage du résultat d'un vote
     public ResultController resultManager;
+
+     /// @brief Manager qui gère l'affichage du canva de débat
     public DebateController debateController;
 
+    /// @brief Initialise les variables lors de l'activation
+    /// 
+    /// Initialise les variables à partir des données entrées 
+    /// dans le menu et met à jour l'affichage en conséquence
     public void OnEnable()
     {
         string mode_name = GameParameters.mode;
@@ -51,6 +76,10 @@ public class GameController : MonoBehaviour
         text_tour.text = "Tour "+appManager.tour;
     }
 
+    /// @brief Valide une carte
+    /// 
+    /// Met à jour l'affichage du nom du joueur et si le tour est fini active
+    /// la vue de l'étape suivante
     public void onValideCard() {
         Card carte = Card.numberToCard(cardSlot.card.cardValue);
         cards[curr_player_id]= carte;
@@ -124,7 +153,9 @@ public class GameController : MonoBehaviour
         cardSlot.card = null;
     }
 
-
+    /// @brief Retour du canva de résultat
+    /// 
+    /// Permet de mettre à jour l'affichage au retour du canva resultat
     public void backToNormalCanva(){
 
         if(appManager.getCurrent() == null)
@@ -146,12 +177,16 @@ public class GameController : MonoBehaviour
         cardSlot.card = null;
     }
 
+    /// @brief Mise à jour visuelle de la fonctionnalité traitée
     public void majFonctionnalite(){
         Fonctionnalite fonc_courante = appManager.getCurrent();
         titre_func.text = fonc_courante.getNom();
         desc_func.text= fonc_courante.getDescription();
     }
 
+    /// @brief Arrêter la partie
+    /// 
+    /// Permet de fermer le jeu lorsqu'on appuie sur le bouton "quitter"
     public void QuitGame()
     {
         #if UNITY_EDITOR
@@ -161,11 +196,14 @@ public class GameController : MonoBehaviour
         #endif
     }
 
+    /// @brief Retour au menu
     public void retourMenu() {
         SceneManager.LoadScene("MenuScene");
     }
 
-    public void backFromCanva(Canvas canva) {
+    /// @brief Retour du canva passé en paramètre vers le canva jeu
+    /// @param canva: Le canva dont on veut revenir
+    private void backFromCanva(Canvas canva) {
         normalCanva.gameObject.SetActive(true);
         canva.gameObject.SetActive(false);
         Joueur curr_player = joueurs[curr_player_id];
@@ -176,10 +214,12 @@ public class GameController : MonoBehaviour
         cardSlot.card = null;
     }
 
+    /// @brief Retour du canva de cafe
     public void backFromCafe(){
         backFromCanva(cafeCanva);
     }
 
+    /// @brief Retour du canva de debat
     public void backFromeDebate(){
         backFromCanva(debateCanva);
     }

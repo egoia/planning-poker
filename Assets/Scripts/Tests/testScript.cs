@@ -8,6 +8,11 @@ using System;
 using System.IO;
 using PlanningPoker;
 
+/// @class testScript
+/// @brief Tests unitaires
+///
+/// Cette classe teste différentes fonctionnalités du code
+
 [TestFixture]
 public class testScript
 {
