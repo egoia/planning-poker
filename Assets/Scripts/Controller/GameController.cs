@@ -40,6 +40,12 @@ public class GameController : MonoBehaviour
      /// @brief Manager qui gère l'affichage du canva de débat
     public DebateController debateController;
 
+    /// @brief Objet contenant visuellement la liste des fonctionnalitées
+    public Transform contentFonc;
+    
+    /// @brief Objet visuel pour afficher la fonctionnalité à la fin de la partie
+    public GameObject foncPrefab; 
+
     /// @brief Initialise les variables lors de l'activation
     /// 
     /// Initialise les variables à partir des données entrées 
@@ -64,6 +70,14 @@ public class GameController : MonoBehaviour
         {
             resultCanva.gameObject.SetActive(false);
             finCanva.gameObject.SetActive(true);
+
+            foreach(Fonctionnalite fonc in appManager.fonctionnalites){
+                // Instancier un nouvel élément de la liste
+                Debug.Log("" + fonc.getNom());
+                GameObject newFoncItem = Instantiate(foncPrefab, contentFonc);
+                newFoncItem.transform.GetChild(0).GetComponent<TMP_Text>().text = fonc.getNom();
+                newFoncItem.transform.GetChild(1).GetComponent<TMP_Text>().text = "Note : "+fonc.getNote();
+            }
             return;
         }
         cards = new Card[joueurs.Count];
@@ -81,6 +95,7 @@ public class GameController : MonoBehaviour
     /// Met à jour l'affichage du nom du joueur et si le tour est fini active
     /// la vue de l'étape suivante
     public void onValideCard() {
+        if(cardSlot.card == null)return;
         Card carte = Card.numberToCard(cardSlot.card.cardValue);
         cards[curr_player_id]= carte;
         curr_player_id++;
@@ -162,6 +177,14 @@ public class GameController : MonoBehaviour
         {
             resultCanva.gameObject.SetActive(false);
             finCanva.gameObject.SetActive(true);
+            Debug.Log("hahahah");
+            foreach(Fonctionnalite fonc in appManager.fonctionnalites){
+                // Instancier un nouvel élément de la liste
+                Debug.Log("lalalal" + fonc.getNom());
+                GameObject newFoncItem = Instantiate(foncPrefab, contentFonc);
+                newFoncItem.transform.GetChild(0).GetComponent<TMP_Text>().text = fonc.getNom();
+                newFoncItem.transform.GetChild(1).GetComponent<TMP_Text>().text = "Note : "+fonc.getNote();
+            }
             return;
         }
 

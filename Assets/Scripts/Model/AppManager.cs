@@ -14,7 +14,7 @@ namespace PlanningPoker{
     public class AppManager
     {
         /// @brief Tableau des fonctionnalités à estimer
-        private Fonctionnalite[] fonctionnalites;
+        public Fonctionnalite[] fonctionnalites;
 
         /// @brief Chemin du fichier contenant les données des fonctionnalités
         private string file;
