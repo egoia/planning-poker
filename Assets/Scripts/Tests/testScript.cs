@@ -1,3 +1,5 @@
+#if UNITY_EDITOR
+
 using System.Collections;
 using NUnit.Framework;
 using UnityEngine;
@@ -154,3 +156,5 @@ public class testScript
     }
 
 }
+
+#endif

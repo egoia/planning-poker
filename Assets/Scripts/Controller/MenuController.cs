@@ -73,19 +73,10 @@ public class MenuController : MonoBehaviour
 
      public void AddName(string name)
     {
-        Debug.Log("Ajout du nom : " + name);
         // Instancier un nouvel élément de la liste
         GameObject newNameItem = Instantiate(namePrefab, contentNoms);
-
-        // Modifier le texte de l'élément
-        TMP_Text nameText = newNameItem.GetComponentInChildren<TMP_Text>();
-        if (nameText != null)
-        {
-            nameText.text = name;
-        }
-        else {
-            Debug.LogError("Le prefab ne contient pas de TMP_Text.");
-        }
+        newNameItem.GetComponent<PlayerView>().player = joueurs[joueurs.Count-1];
+        newNameItem.GetComponent<PlayerView>().updateContent();
     }
 
 }
