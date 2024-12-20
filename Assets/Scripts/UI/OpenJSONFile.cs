@@ -40,6 +40,7 @@ public class CanvasSampleOpenFileJson : MonoBehaviour, IPointerDownHandler {
         var paths = StandaloneFileBrowser.OpenFilePanel("Select JSON File", "", "json", false);
         if (paths.Length > 0) {
             file = paths[0];
+            GameObject.FindWithTag("MenuManager").GetComponent<MenuController>().file = file;
             GetComponent<Button>().GetComponentInChildren<TMP_Text> ().text = System.IO.Path.GetFileName(file);
             Debug.Log(file);
         }

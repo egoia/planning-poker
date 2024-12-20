@@ -117,7 +117,8 @@ public class testScript
     { 
         var appManager = new AppManager(testFilePath, Validator.moyenne);
         Card[] cartes = { Card.cinq, Card.cinq, Card.cinq };
-        int res = appManager.joue_tour(cartes);
+        Card c;
+        int res = appManager.joue_tour(cartes, out c);
         appManager.save();
         Assert.AreEqual(1, res, "AppManager.joue_tour n'a pas mis à jour correctement la fonctionnalité");
     }
@@ -127,7 +128,8 @@ public class testScript
     {
         var appManager = new AppManager(testFilePath, Validator.moyenne);
         Card[] cartes = { Card.huit };
-        appManager.joue_tour(cartes);
+        Card c;
+        appManager.joue_tour(cartes, out c);
         appManager.save();
         Assert.IsTrue(File.Exists(testFilePath), "Le fichier n'a pas été créé après la sauvegarde.");
         var reloadedManager = new AppManager(testFilePath, Validator.moyenne);

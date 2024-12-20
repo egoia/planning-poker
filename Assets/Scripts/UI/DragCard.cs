@@ -64,6 +64,10 @@ public class DragCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
     }
 
+    public void moveToHand(){
+        StartCoroutine(MoveCoroutine(handPos, backToHandSpeed));
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         isDraged = true;

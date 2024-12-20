@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - GameCanva
+  - MenuManager
   layers:
   - Default
   - TransparentFX

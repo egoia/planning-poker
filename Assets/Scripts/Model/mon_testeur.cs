@@ -113,7 +113,8 @@ public class mon_testeur : MonoBehaviour
 
         var appManager = new AppManager(testFilePath, Validator.moyenne);
         Card[] cartes = { Card.huit };
-        appManager.joue_tour(cartes);
+        Card c; 
+        appManager.joue_tour(cartes, out c);
         appManager.save();
         Assert.IsTrue(File.Exists(testFilePath), "Le fichier n'a pas été créé après la sauvegarde.");
         var reloadedManager = new AppManager(testFilePath, Validator.moyenne);

@@ -23,7 +23,7 @@ namespace PlanningPoker{
         private int current_fonc = 0;
 
         /// @brief Numéro du tour en cours
-        private int tour = 1;
+        public int tour {get;set;}
 
         /// @brief Mode de jeu
         private Validator.Validate mode;
@@ -35,6 +35,7 @@ namespace PlanningPoker{
         /// Initialise les fonctionnalités à partir du fichier JSON, et sélectionne le mode de jeu 
         public AppManager(string file, Validator.Validate mode) 
         {
+            tour = 1;
             if (File.Exists(file))
             {
                 this.file=file;
@@ -86,12 +87,13 @@ namespace PlanningPoker{
         /// @brief Obtient la fonctionnalité actuellement en cours d'estimation
         /// @return: La fonctionnalité en cours, ou null si toutes les fonctionnalités sont estimées
         public Fonctionnalite getCurrent() {
-            if(current_fonc>= fonctionnalites.Length)return null;
+            if(current_fonc>= fonctionnalites.Length) return null;
             return fonctionnalites[current_fonc];
         }
 
         /// @brief Joue un tour en évaluant les cartes soumises par les joueurs
         /// @param cartes: Tableau des cartes soumises par les joueurs pour ce tour
+        /// @param c: carte résultant du vote
         /// @return: Un code indiquant le résultat du tour :
         /// - '1' : Le tour s'est bien passé
         /// - '0' : Aucune carte validée
@@ -100,7 +102,8 @@ namespace PlanningPoker{
         /// - '-3' : Aucune fonctionnalité restante à estimer
         ///
         /// La fonction utilise une règle stricte pour le premier tour, puis applique la règle de validation sélectionnée pour les tours suivants
-        public int joue_tour(Card[] cartes) {
+        public int joue_tour(Card[] cartes, out Card c) {
+            c=null;
             if(current_fonc>=fonctionnalites.Length)return -3;
             Card carte;
             if(this.tour == 1){
@@ -109,12 +112,15 @@ namespace PlanningPoker{
             else{
                 carte = this.mode(cartes);
             }
-            if(carte == null) return 0;
+            c = carte;
+            
             if(carte == Card.cafe) return -2;
+            this.tour++;
+            if(carte == null) return 0;
             if(carte == Card.joker) return -1;
             this.fonctionnalites[current_fonc].setNote(carte);
             this.current_fonc++;
-            this.tour++;
+            this.tour=1;
             return 1;
         }
     }
